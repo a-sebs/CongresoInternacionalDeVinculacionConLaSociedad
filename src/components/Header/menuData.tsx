@@ -1,0 +1,23 @@
+import { Menu } from "@/types/menu";
+
+const menuData: Menu[] = [
+  {
+    id: 1,
+    title: "Inicio",
+    path: "/",
+    newTab: false,
+  },
+  {
+    id: 2,
+    title: "Congreso y Agenda",
+    path: "/agenda",
+    newTab: false,
+  },
+  {
+    id: 3,
+    title: "Participa",
+    path: "/participa",
+    newTab: false,
+  },
+];
+export default menuData;
