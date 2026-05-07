@@ -32,12 +32,12 @@ const Hero = () => {
         }}
       >
         <div className="container relative z-10">
-          <div className="flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-8">
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8">
             <a
               href="https://docs.google.com/forms/..."
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xs bg-primary px-32 py-8 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+              className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-base sm:text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
             >
               Inscríbete
             </a>
@@ -45,7 +45,7 @@ const Hero = () => {
               href="https://docs.google.com/forms/..."
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xs bg-primary px-32 py-8 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+              className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-base sm:text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
             >
               Postula tu Ponencia
             </a>
@@ -53,7 +53,7 @@ const Hero = () => {
               href="https://docs.google.com/forms/..."
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xs bg-primary px-32 py-8 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+              className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-base sm:text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
             >
               Postula a la Feria
             </a>
