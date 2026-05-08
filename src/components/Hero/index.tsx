@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white dark:bg-gray-dark"
+        className="relative z-10 overflow-hidden bg-white"
       >
           {/* Imagen invisible para definir la altura de la sección */}
         <img
@@ -26,7 +26,7 @@ const Hero = () => {
 
       {/* Sección de botones CTA */}
       <section 
-        className="relative bg-white dark:bg-gray-dark py-32 md:py-48 bg-center bg-no-repeat bg-cover"
+        className="relative bg-white py-32 md:py-48 bg-center bg-no-repeat bg-cover"
         style={{
           backgroundImage: 'url(/images/hero/background_portal_transparente_2.png)',
         }}

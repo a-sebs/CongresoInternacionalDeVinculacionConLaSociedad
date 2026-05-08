@@ -4,19 +4,19 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="pt-16">
+    <section className="bg-gray-light py-16">
       <div className="container">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+          <h2 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
             Organizadores y Aliados
           </h2>
-          <p className="text-body-color dark:text-body-color-dark">
+          <p className="text-body-color">
             Instituciones líderes comprometidas con la vinculación y el impacto social
           </p>
         </div>
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
-            <div className="flex flex-wrap items-center justify-center rounded-xs bg-gray-dark px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
+            <div className="flex flex-wrap items-center justify-center rounded-xs px-8 py-8 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
               {brandsData.map((brand) => (
                 <SingleBrand key={brand.id} brand={brand} />
               ))}
