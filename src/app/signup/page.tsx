@@ -15,14 +15,14 @@ const SignupPage = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="shadow-three dark:bg-dark mx-auto max-w-[500px] rounded-sm bg-white px-6 py-10 sm:p-[60px]">
-                <h3 className="mb-3 text-center text-2xl font-bold text-black sm:text-3xl dark:text-white">
+              <div className="shadow-three mx-auto max-w-[500px] rounded-sm bg-white px-6 py-10 sm:p-[60px]">
+                <h3 className="mb-3 text-center text-2xl font-bold text-black sm:text-3xl">
                   Create your account
                 </h3>
                 <p className="text-body-color mb-11 text-center text-base font-medium">
                   It’s totally free and super easy
                 </p>
-                <button className="border-stroke dark:text-body-color-dark dark:shadow-two text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 dark:border-transparent dark:bg-[#2C303B] dark:hover:shadow-none">
+                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300">
                   <span className="mr-3">
                     <svg
                       width="20"
@@ -59,7 +59,7 @@ const SignupPage = () => {
                   Sign in with Google
                 </button>
 
-                <button className="border-stroke dark:text-body-color-dark dark:shadow-two text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 dark:border-transparent dark:bg-[#2C303B] dark:hover:shadow-none">
+                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300">
                   <span className="mr-3">
                     <svg
                       fill="currentColor"
@@ -84,7 +84,7 @@ const SignupPage = () => {
                   <div className="mb-8">
                     <label
                       htmlFor="name"
-                      className="text-dark mb-3 block text-sm dark:text-white"
+                      className="text-dark mb-3 block text-sm"
                     >
                       {" "}
                       Full Name{" "}
@@ -93,13 +93,13 @@ const SignupPage = () => {
                       type="text"
                       name="name"
                       placeholder="Enter your full name"
-                      className="border-stroke dark:text-body-color-dark dark:shadow-two text-body-color focus:border-primary dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300"
                     />
                   </div>
                   <div className="mb-8">
                     <label
                       htmlFor="email"
-                      className="text-dark mb-3 block text-sm dark:text-white"
+                      className="text-dark mb-3 block text-sm"
                     >
                       {" "}
                       Work Email{" "}
@@ -108,13 +108,13 @@ const SignupPage = () => {
                       type="email"
                       name="email"
                       placeholder="Enter your Email"
-                      className="border-stroke dark:text-body-color-dark dark:shadow-two text-body-color focus:border-primary dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300"
                     />
                   </div>
                   <div className="mb-8">
                     <label
                       htmlFor="password"
-                      className="text-dark mb-3 block text-sm dark:text-white"
+                      className="text-dark mb-3 block text-sm"
                     >
                       {" "}
                       Your Password{" "}
@@ -123,7 +123,7 @@ const SignupPage = () => {
                       type="password"
                       name="password"
                       placeholder="Enter your Password"
-                      className="border-stroke dark:text-body-color-dark dark:shadow-two text-body-color focus:border-primary dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300 dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300"
                     />
                   </div>
                   <div className="mb-8 flex">
@@ -137,7 +137,7 @@ const SignupPage = () => {
                           id="checkboxLabel"
                           className="sr-only"
                         />
-                        <div className="box border-body-color/20 mt-1 mr-4 flex h-5 w-5 items-center justify-center rounded-sm border dark:border-white/10">
+                        <div className="box border-body-color/20 mt-1 mr-4 flex h-5 w-5 items-center justify-center rounded-sm border">
                           <span className="opacity-0">
                             <svg
                               width="11"
@@ -171,7 +171,7 @@ const SignupPage = () => {
                     </label>
                   </div>
                   <div className="mb-6">
-                    <button className="shadow-submit dark:shadow-submit-dark bg-primary hover:bg-primary/90 flex w-full items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300">
+                    <button className="shadow-submit bg-primary hover:bg-primary/90 flex w-full items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300">
                       Sign up
                     </button>
                   </div>

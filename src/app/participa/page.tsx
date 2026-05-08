@@ -24,13 +24,13 @@ const ParticipaPage = () => {
       <section className="py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto mb-12 max-w-[800px] text-center">
-            <h1 className="mb-4 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+            <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Participa en Conexión 2026
             </h1>
-            <p className="mb-4 text-xl text-body-color dark:text-body-color-dark">
+            <p className="mb-4 text-xl text-body-color">
               Inscripción, postulación de ponencias, feria y pago en un solo lugar.
             </p>
-            <p className="text-base text-body-color dark:text-body-color-dark">
+            <p className="text-base text-body-color">
               Aquí encontrarás los accesos para registrarte como asistente, postular una ponencia, 
               aplicar a la feria y realizar tu pago en línea.
             </p>
@@ -39,17 +39,17 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 2: Inscripción general */}
-      <section className="bg-gray-light py-16 dark:bg-gray-dark md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[700px]">
             <div className="mb-8 text-center">
-              <h2 className="mb-2 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+              <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
                 Inscripción al congreso
               </h2>
               <p className="mb-4 text-lg font-semibold text-primary">
                 Registro para asistentes y participantes del evento
               </p>
-              <p className="text-base text-body-color dark:text-body-color-dark">
+              <p className="text-base text-body-color">
                 Completa tu registro para participar en las actividades académicas, 
                 la agenda del congreso y los espacios de articulación.
               </p>
@@ -71,13 +71,13 @@ const ParticipaPage = () => {
         <div className="container">
           <div className="mx-auto max-w-[700px]">
             <div className="mb-8 text-center">
-              <h2 className="mb-2 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+              <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
                 Postulación a ponencias
               </h2>
               <p className="mb-4 text-lg font-semibold text-primary">
                 Experiencias, resultados y buenas prácticas en vinculación con la sociedad
               </p>
-              <p className="text-base text-body-color dark:text-body-color-dark mb-8">
+              <p className="text-base text-body-color mb-8">
                 Convocatoria abierta para docentes, investigadores y gestores que deseen 
                 presentar ponencias alineadas a los ejes temáticos del congreso.
               </p>
@@ -98,17 +98,17 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 4: Postulación a la feria */}
-      <section className="bg-gray-light py-16 dark:bg-gray-dark md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[700px]">
             <div className="mb-8 text-center">
-              <h2 className="mb-2 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+              <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
                 Postulación a la feria
               </h2>
               <p className="mb-4 text-lg font-semibold text-primary">
                 Proyectos de vinculación, laboratorios y servicios especializados
               </p>
-              <p className="text-base text-body-color dark:text-body-color-dark mb-8">
+              <p className="text-base text-body-color mb-8">
                 Espacio para iniciativas institucionales que busquen visibilizar capacidades, 
                 resultados y oportunidades de articulación.
               </p>
@@ -132,13 +132,13 @@ const ParticipaPage = () => {
       <section className="py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="mb-2 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Pago de inscripción
             </h2>
             <p className="mb-4 text-lg font-semibold text-primary">
               Accede a tarifas, categorías e instrucciones de pago
             </p>
-            <p className="mb-8 text-base text-body-color dark:text-body-color-dark">
+            <p className="mb-8 text-base text-body-color">
               Esta sección permitirá realizar el pago en línea y validar la participación en el 
               congreso, una vez se definan oficialmente las tarifas.
             </p>
@@ -158,7 +158,7 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 6: Fechas clave */}
-      <section className="bg-gray-light py-16 dark:bg-gray-dark md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <SectionTitle
             title="Fechas importantes"
@@ -174,9 +174,9 @@ const ParticipaPage = () => {
             ].map((date, index) => (
               <div
                 key={index}
-                className="rounded-lg bg-white p-6 text-center dark:bg-gray-dark-2"
+                className="rounded-lg bg-white p-6 text-center"
               >
-                <p className="text-base font-semibold text-body-color dark:text-body-color-dark">
+                <p className="text-base font-semibold text-body-color">
                   {date}
                 </p>
                 <p className="mt-2 text-lg font-bold text-primary">Por definir</p>
@@ -190,7 +190,7 @@ const ParticipaPage = () => {
       <section className="py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="mb-2 text-2xl font-bold text-black dark:text-white md:text-3xl">
+            <h2 className="mb-2 text-2xl font-bold text-black md:text-3xl">
               Contacto
             </h2>
             <p className="mb-8 text-lg font-semibold text-primary">
@@ -205,7 +205,7 @@ const ParticipaPage = () => {
 
             <form onSubmit={handleSubmit} className="mb-8 text-left">
               <div className="mb-4">
-                <label className="mb-2 block text-base font-semibold text-black dark:text-white">
+                <label className="mb-2 block text-base font-semibold text-black">
                   Correo electrónico
                 </label>
                 <input
@@ -213,7 +213,7 @@ const ParticipaPage = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="tu@correo.com"
-                  className="w-full border border-gray-3 bg-transparent px-4 py-3 text-black outline-none duration-300 placeholder:text-body-color/40 focus:border-primary dark:border-gray-5 dark:text-white"
+                  className="w-full border border-gray-3 bg-transparent px-4 py-3 text-black outline-none duration-300 placeholder:text-body-color/40 focus:border-primary"
                   required
                 />
               </div>

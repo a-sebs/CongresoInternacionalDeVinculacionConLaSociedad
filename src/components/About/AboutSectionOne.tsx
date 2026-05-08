@@ -5,17 +5,17 @@ const AboutSectionOne = () => {
   return (
     <section 
       id="about" 
-      className="relative bg-gray-light py-16 dark:bg-gray-dark md:py-[120px]"
+      className="relative bg-gray-light py-16 md:py-[120px]"
     >
       <div className="container relative z-10">
         <div className="mx-auto max-w-[800px] text-center">
-          <h2 className="mb-4 text-4xl font-bold text-black dark:text-white md:text-5xl lg:text-6xl">
+          <h2 className="mb-4 text-4xl font-bold text-black md:text-5xl lg:text-6xl">
             ¿Por qué participar?
           </h2>
           <p className="mb-6 text-2xl font-semibold text-primary md:text-3xl">
             Diálogo, intercambio académico y articulación interinstitucional
           </p>
-          <p className="mb-8 text-lg leading-relaxed text-body-color dark:text-body-color-dark md:text-xl">
+          <p className="mb-8 text-lg leading-relaxed text-body-color md:text-xl">
             El congreso busca fortalecer la institucionalidad de la vinculación, impulsar la 
             transferencia de conocimiento, promover la innovación y consolidar redes de cooperación 
             entre instituciones de educación superior y actores del entorno.

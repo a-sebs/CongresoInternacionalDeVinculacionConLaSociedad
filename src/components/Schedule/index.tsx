@@ -2,7 +2,7 @@ import SectionTitle from "../Common/SectionTitle";
 
 const Schedule = () => {
   return (
-    <section id="schedule" className="bg-gray-light py-16 dark:bg-dark md:py-20 lg:py-28">
+    <section id="schedule" className="bg-gray-light py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Cronograma General"
@@ -10,7 +10,7 @@ const Schedule = () => {
           center
         />
         <div className="text-center">
-          <p className="text-lg text-body-color dark:text-body-color-dark">
+          <p className="text-lg text-body-color">
             Próximamente se compartirán más detalles del cronograma.
           </p>
         </div>

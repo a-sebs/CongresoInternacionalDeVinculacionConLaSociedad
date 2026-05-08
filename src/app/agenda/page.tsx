@@ -119,13 +119,13 @@ const CongresosAgendaPage = () => {
       <section className="py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto mb-12 max-w-[800px] text-center">
-            <h1 className="mb-4 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+            <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Congreso y Agenda
             </h1>
             <p className="mb-4 text-xl font-semibold text-primary">
               Un espacio académico para fortalecer la vinculación con la sociedad
             </p>
-            <p className="text-base leading-relaxed text-body-color dark:text-body-color-dark">
+            <p className="text-base leading-relaxed text-body-color">
               El congreso promueve el intercambio de experiencias, la articulación de funciones 
               sustantivas, la innovación, la transferencia tecnológica y la construcción de alianzas 
               entre universidades, empresas, actores públicos y sociedad civil.
@@ -141,13 +141,13 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 2: Objetivo */}
-      <section className="bg-gray-light py-16 dark:bg-gray-dark md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[800px]">
-            <h2 className="mb-6 text-center text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+            <h2 className="mb-6 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Objetivo del congreso
             </h2>
-            <p className="text-center text-lg leading-relaxed text-body-color dark:text-body-color-dark md:text-xl">
+            <p className="text-center text-lg leading-relaxed text-body-color md:text-xl">
               Generar espacios de diálogo, intercambio académico y colaboración para fortalecer 
               la vinculación con la sociedad, desarrollar talento humano e impulsar la 
               internacionalización y la transferencia tecnológica.
@@ -178,7 +178,7 @@ const CongresosAgendaPage = () => {
                     <img src={`/images/brands/${target.icon}`} alt={target.label} className="h-40 w-40 object-contain" />
                   </div>
                 </div>
-                <p className="font-semibold text-black dark:text-white text-base md:text-lg">
+                <p className="font-semibold text-black text-base md:text-lg">
                   {target.label}
                 </p>
               </div>
@@ -188,7 +188,7 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 4: Ejes temáticos */}
-      <section className="bg-gray-light py-16 dark:bg-gray-dark md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <SectionTitle
             title="Ejes temáticos"
@@ -196,19 +196,19 @@ const CongresosAgendaPage = () => {
             center
           />
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="rounded-lg bg-white p-8 dark:bg-gray-dark-2">
+            <div className="rounded-lg bg-white p-8">
               <h3 className="mb-4 text-xl font-bold text-primary">
                 Eje 1: Innovación, transferencia tecnológica y desarrollo
               </h3>
-              <p className="text-base text-body-color dark:text-body-color-dark">
+              <p className="text-base text-body-color">
                 Vinculación, valorización del conocimiento y alianzas universidad–empresa–Estado.
               </p>
             </div>
-            <div className="rounded-lg bg-white p-8 dark:bg-gray-dark-2">
+            <div className="rounded-lg bg-white p-8">
               <h3 className="mb-4 text-xl font-bold text-primary">
                 Eje 2: Innovación social e impacto de la vinculación
               </h3>
-              <p className="text-base text-body-color dark:text-body-color-dark">
+              <p className="text-base text-body-color">
                 Transformación social, proyectos participativos y desarrollo sostenible.
               </p>
             </div>
@@ -220,13 +220,13 @@ const CongresosAgendaPage = () => {
       <section className="py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
-            <h2 className="mb-2 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Feria de proyectos y servicios
             </h2>
             <p className="mb-4 text-lg font-semibold text-primary">
               Espacio para visibilizar proyectos de vinculación y capacidades institucionales
             </p>
-            <p className="mb-8 text-base text-body-color dark:text-body-color-dark">
+            <p className="mb-8 text-base text-body-color">
               La feria contempla stands para proyectos de vinculación y para laboratorios o 
               servicios especializados, como un espacio de networking, difusión e interacción 
               entre instituciones y actores del entorno.
@@ -242,16 +242,16 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 8: Ponentes */}
-      <section className="bg-gray-light py-16 dark:bg-gray-dark md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
-            <h2 className="mb-2 text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Ponentes y panelistas
             </h2>
             <p className="mb-4 text-lg font-semibold text-primary">
               Nacionales e internacionales
             </p>
-            <p className="text-base text-body-color dark:text-body-color-dark">
+            <p className="text-base text-body-color">
               Próximamente se publicará el listado oficial de conferencistas, panelistas y 
               moderadores del evento.
             </p>
@@ -268,7 +268,7 @@ const CongresosAgendaPage = () => {
       {/* Tabla de Agenda Detallada */}
       <section className="py-16 md:py-[120px]">
         <div className="container">
-          <h2 className="mb-8 text-center text-4xl font-bold text-black dark:text-white sm:text-5xl md:text-6xl">
+          <h2 className="mb-8 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
             Cronograma detallado
           </h2>
 
@@ -297,17 +297,17 @@ const CongresosAgendaPage = () => {
           </div>
 
           {/* Table */}
-          <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700">
+          <div className="overflow-x-auto rounded-lg border border-gray-200">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
-                  <th className="px-4 py-4 text-left font-semibold text-gray-900 dark:text-white md:px-6">
+                <tr className="border-b border-gray-200 bg-gray-50">
+                  <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
                     Hora
                   </th>
-                  <th className="px-4 py-4 text-left font-semibold text-gray-900 dark:text-white md:px-6">
+                  <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
                     Actividad
                   </th>
-                  <th className="px-4 py-4 text-left font-semibold text-gray-900 dark:text-white md:px-6">
+                  <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
                     Tema
                   </th>
                 </tr>
@@ -317,17 +317,17 @@ const CongresosAgendaPage = () => {
                   (activity, index) => (
                     <tr
                       key={index}
-                      className={`border-b border-gray-200 transition-colors hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-800/50 ${
-                        index % 2 === 0 ? "bg-white dark:bg-gray-900" : "bg-gray-50 dark:bg-gray-800"
+                      className={`border-b border-gray-200 transition-colors hover:bg-gray-50 ${
+                        index % 2 === 0 ? "bg-white" : "bg-gray-50"
                       }`}
                     >
-                      <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 dark:text-white md:px-6">
+                      <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 md:px-6">
                         {activity.time}
                       </td>
-                      <td className="px-4 py-4 text-gray-700 dark:text-gray-300 md:px-6">
+                      <td className="px-4 py-4 text-gray-700 md:px-6">
                         {activity.activity}
                       </td>
-                      <td className="px-4 py-4 text-sm text-gray-600 dark:text-gray-400 md:px-6">
+                      <td className="px-4 py-4 text-sm text-gray-600 md:px-6">
                         {activity.theme}
                       </td>
                     </tr>
