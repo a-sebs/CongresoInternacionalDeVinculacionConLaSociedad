@@ -5,7 +5,6 @@ import Contact from "@/components/Contact";
 import FairAndNetworking from "@/components/FairAndNetworking";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Schedule from "@/components/Schedule";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,7 +20,6 @@ export default function Home() {
       <Hero />
       <AboutSectionOne />
       <Features />
-      <Schedule />
       <FairAndNetworking />
       <Brands />
       <Contact />
