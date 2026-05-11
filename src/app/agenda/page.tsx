@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import SectionTitle from "@/components/Common/SectionTitle";
 import Link from "next/link";
@@ -195,22 +196,46 @@ const CongresosAgendaPage = () => {
             paragraph="Temas centrales del congreso"
             center
           />
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="rounded-lg bg-white p-8">
-              <h3 className="mb-4 text-xl font-bold text-primary">
-                Eje 1: Innovación, transferencia tecnológica y desarrollo
-              </h3>
-              <p className="text-base text-body-color">
-                Vinculación, valorización del conocimiento y alianzas universidad–empresa–Estado.
-              </p>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2">
+            {/* Eje 1 */}
+            <div className="w-full">
+              <div className="wow fadeInUp" data-wow-delay=".15s">
+                <div className="bg-primary/10 text-primary mb-10 flex h-[140px] w-[140px] items-center justify-center rounded-full mx-auto">
+                  <Image
+                    src="/images/brands/eje1.png"
+                    alt="Innovación y Transferencia Tecnológica"
+                    width={120}
+                    height={120}
+                    className="w-auto h-auto"
+                  />
+                </div>
+                <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl text-center">
+                  Innovación, Transferencia Tecnológica y Desarrollo
+                </h3>
+                <p className="text-body-color text-base leading-relaxed font-medium text-center">
+                  Vinculación, valorización del conocimiento y alianzas universidad–empresa–Estado.
+                </p>
+              </div>
             </div>
-            <div className="rounded-lg bg-white p-8">
-              <h3 className="mb-4 text-xl font-bold text-primary">
-                Eje 2: Innovación social e impacto de la vinculación
-              </h3>
-              <p className="text-base text-body-color">
-                Transformación social, proyectos participativos y desarrollo sostenible.
-              </p>
+            {/* Eje 2 */}
+            <div className="w-full">
+              <div className="wow fadeInUp" data-wow-delay=".15s">
+                <div className="bg-primary/10 text-primary mb-10 flex h-[140px] w-[140px] items-center justify-center rounded-full mx-auto">
+                  <Image
+                    src="/images/brands/eje2.png"
+                    alt="Innovación Social e Impacto"
+                    width={120}
+                    height={120}
+                    className="w-auto h-auto"
+                  />
+                </div>
+                <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl text-center">
+                  Innovación Social e Impacto en la Sociedad
+                </h3>
+                <p className="text-body-color text-base leading-relaxed font-medium text-center">
+                  Transformación social, proyectos participativos y desarrollo sostenible.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -269,7 +294,7 @@ const CongresosAgendaPage = () => {
       <section className="py-16 md:py-[120px]">
         <div className="container">
           <h2 className="mb-8 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-            Cronograma detallado
+            Agenda del Evento
           </h2>
 
           {/* Day Tabs */}

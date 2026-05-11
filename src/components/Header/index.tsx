@@ -39,8 +39,8 @@ const Header = () => {
                 className="header-logo block w-full py-5 lg:py-2"
               >
                 <Image
-                  src="/images/logo/logo-2.svg"
-                  alt="logo"
+                  src="/images/logo/logo_conexion.png"
+                  alt="Conexión 2026"
                   width={140}
                   height={30}
                   className="w-full"

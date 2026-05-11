@@ -1,396 +1,292 @@
-"use client";
+    "use client";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="relative z-10 bg-white pt-16 md:pt-20 lg:pt-24">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  <Image
-                    src="/images/logo/logo-2.svg"
-                    alt="logo"
-                    className="w-full"
-                    width={140}
-                    height={30}
-                  />
-                </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+    <footer className="relative z-10 bg-slate-900 pt-16 md:pt-20 lg:pt-24">
+      <div className="container">
+        {/* Main Grid - 4 Columns */}
+        <div className="-mx-4 flex flex-wrap mb-12">
+          {/* Column 1: Logo & Description */}
+          <div className="w-full px-4 md:w-1/2 lg:w-3/12 xl:w-3/12 mb-12 lg:mb-0">
+            <div className="max-w-[300px]">
+              <Link href="/" className="mb-6 inline-block">
+                <Image
+                  src="/images/logo/logo_conexion_blanco.png"
+                  alt="Conexión 2026"
+                  className="w-auto h-auto"
+                  width={180}
+                  height={60}
+                />
+              </Link>
+              <h3 className="text-sm font-semibold text-white mb-3">
+                Congreso Internacional de Vinculación con la Sociedad
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-300">
+                Un espacio académico e institucional para fortalecer la articulación entre universidades, sector público, empresas y actores sociales, promoviendo experiencias, proyectos y buenas prácticas de vinculación con impacto.
+              </p>
+            </div>
+          </div>
+
+          {/* Column 2: Participa */}
+          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 mb-12 lg:mb-0">
+            <div>
+              <div className="flex items-center gap-2 mb-8">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-[#00A7B5]"
+                >
+                  <circle cx="12" cy="8" r="4" fill="currentColor" />
+                  <path d="M6 20c0-3.313 2.686-6 6-6s6 2.687 6 6M16 8h4M18 6v4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+                <h2 className="text-lg font-bold text-[#00A7B5]">
+                  Participa
+                </h2>
+              </div>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/participa"
+                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
+                    Inscríbete
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/participa"
+                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
+                    Presenta tu Ponencia
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/participa"
+                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
+                    Feria y Networking
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/participa"
+                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
+                    Auspicios
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Column 3: Congreso */}
+          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 mb-12 lg:mb-0">
+            <div>
+              <h2 className="mb-8 text-lg font-bold text-[#00A7B5]">
+                Congreso
+              </h2>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/about"
+                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
+                    Sobre el Congreso
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/agenda"
+                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
+                    Agenda
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/"
+                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
+                    Ponentes
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/"
+                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
+                    Galería
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Column 4: Contacto */}
+          <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12 mb-12 lg:mb-0">
+            <div>
+              <div className="flex items-center gap-2 mb-8">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="text-[#00A7B5]"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="2" />
+                  <path d="M2 6l10 7 10-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+                <h2 className="text-lg font-bold text-[#00A7B5]">
+                  Contacto
+                </h2>
+              </div>
+              <p className="text-sm text-gray-300 mb-6">
+                Consultas sobre inscripciones, ponencias, feria, pagos y auspicios
+              </p>
+              <div className="mb-4">
+                <p className="text-sm text-gray-300 mb-2">Correo electrónico:</p>
+                <a
+                  href="mailto:congresovinculacion@epn.edu.ec"
+                  className="text-sm text-[#00A7B5] hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-[#00A7B5]"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" strokeWidth="2" />
+                    <path d="M2 6l10 7 10-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                  congresovinculacion@epn.edu.ec
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#00A7B5] to-transparent mb-12"></div>
+
+        {/* Bottom Bar */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Left: Globe Icon, Copyright & Institutions */}
+          <div className="flex-1">
+            <div className="flex items-start gap-4 mb-4">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="text-white flex-shrink-0 mt-1"
+              >
+                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10z" stroke="currentColor" strokeWidth="2" />
+                <path d="M2 12h20M12 2a4.5 4.5 0 010 20 4.5 4.5 0 010-20z" stroke="currentColor" strokeWidth="2" />
+              </svg>
+              <div>
+                <p className="text-xs text-white mb-2">
+                  © 2026 Congreso Internacional de Vinculación con la Sociedad – Conexión 2026. Todos los derechos reservados.
                 </p>
-                <div className="flex items-center">
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary"
-                  >
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.1 10.4939V7.42705C12.1 6.23984 13.085 5.27741 14.3 5.27741H16.5V2.05296L13.5135 1.84452C10.9664 1.66676 8.8 3.63781 8.8 6.13287V10.4939H5.5V13.7183H8.8V20.1667H12.1V13.7183H15.4L16.5 10.4939H12.1Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary"
-                  >
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M13.9831 19.25L9.82094 13.3176L4.61058 19.25H2.40625L8.843 11.9233L2.40625 2.75H8.06572L11.9884 8.34127L16.9034 2.75H19.1077L12.9697 9.73737L19.6425 19.25H13.9831ZM16.4378 17.5775H14.9538L5.56249 4.42252H7.04674L10.808 9.6899L11.4584 10.6039L16.4378 17.5775Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary"
-                  >
-                    <svg
-                      width="18"
-                      height="14"
-                      viewBox="0 0 18 14"
-                      className="fill-current"
-                    >
-                      <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="/"
-                    aria-label="social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-body-color duration-300 hover:text-primary"
-                  >
-                    <svg
-                      width="17"
-                      height="16"
-                      viewBox="0 0 17 16"
-                      className="fill-current"
-                    >
-                      <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black">
-                  Useful Links
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary"
-                    >
-                      Pricing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black">
-                  Terms
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary"
-                    >
-                      TOS
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary"
-                    >
-                      Refund Policy
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black">
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary"
-                    >
-                      Open Support Ticket
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary"
-                    >
-                      Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary"
-                    >
-                      About
-                    </Link>
-                  </li>
-                </ul>
+                <p className="text-xs text-gray-400">
+                  Escuela Politécnica Nacional | Universidad Libertadores | REUVIC | Red de Vinculación con la Sociedad
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="h-px w-full bg-linear-to-r from-transparent via-[#D2D8E183] to-transparent"></div>
-        </div>
-        <div className="absolute right-0 top-14 z-[-1]">
-          <svg
-            width="55"
-            height="99"
-            viewBox="0 0 55 99"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle opacity="0.8" cx="49.5" cy="49.5" r="49.5" fill="#959CB1" />
-            <mask
-              id="mask0_94:899"
-              style={{ maskType: "alpha" }}
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="99"
-              height="99"
+          {/* Right: Social Icons */}
+          <div className="flex items-center gap-4">
+            <a
+              href="/"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full border border-white text-white hover:bg-white hover:text-slate-900 duration-300 flex items-center justify-center"
             >
-              <circle
-                opacity="0.8"
-                cx="49.5"
-                cy="49.5"
-                r="49.5"
-                fill="#00A7B5"
-              />
-            </mask>
-            <g mask="url(#mask0_94:899)">
-              <circle
-                opacity="0.8"
-                cx="49.5"
-                cy="49.5"
-                r="49.5"
-                fill="url(#paint0_radial_94:899)"
-              />
-              <g opacity="0.8" filter="url(#filter0_f_94:899)">
-                <circle cx="53.8676" cy="26.2061" r="20.3824" fill="white" />
-              </g>
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_94:899"
-                x="12.4852"
-                y="-15.1763"
-                width="82.7646"
-                height="82.7646"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="10.5"
-                  result="effect1_foregroundBlur_94:899"
-                />
-              </filter>
-              <radialGradient
-                id="paint0_radial_94:899"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(49.5 49.5) rotate(90) scale(53.1397)"
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.469v6.766z" />
+              </svg>
+            </a>
+            <a
+              href="/"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full border border-white text-white hover:bg-white hover:text-slate-900 duration-300 flex items-center justify-center"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <stop stopOpacity="0.47" />
-                <stop offset="1" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-          </svg>
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a
+              href="/"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full border border-white text-white hover:bg-white hover:text-slate-900 duration-300 flex items-center justify-center"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a
+              href="/"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full border border-white text-white hover:bg-white hover:text-slate-900 duration-300 flex items-center justify-center"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 4c2.21 0 2.469.009 3.33.048 2.052.094 3.278 1.315 3.372 3.372.04.861.048 1.12.048 3.33s-.008 2.469-.048 3.33c-.094 2.052-1.315 3.278-3.372 3.372-.861.04-1.12.048-3.33.048s-2.469-.008-3.33-.048c-2.052-.094-3.278-1.315-3.372-3.372-.04-.861-.048-1.12-.048-3.33s.008-2.469.048-3.33c.094-2.052 1.315-3.278 3.372-3.372.861-.04 1.12-.048 3.33-.048zm0 2.235c-1.878 0-3.4 1.522-3.4 3.4s1.522 3.4 3.4 3.4 3.4-1.522 3.4-3.4-1.522-3.4-3.4-3.4zm4.418-.858a.794.794 0 110 1.588.794.794 0 010-1.588zm-4.418 2.277c-1.295 0-2.345 1.05-2.345 2.345s1.05 2.345 2.345 2.345 2.345-1.05 2.345-2.345-1.05-2.345-2.345-2.345z" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div className="absolute bottom-24 left-0 z-[-1]">
-          <svg
-            width="79"
-            height="94"
-            viewBox="0 0 79 94"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              opacity="0.3"
-              x="-41"
-              y="26.9426"
-              width="66.6675"
-              height="66.6675"
-              transform="rotate(-22.9007 -41 26.9426)"
-              fill="url(#paint0_linear_94:889)"
-            />
-            <rect
-              x="-41"
-              y="26.9426"
-              width="66.6675"
-              height="66.6675"
-              transform="rotate(-22.9007 -41 26.9426)"
-              stroke="url(#paint1_linear_94:889)"
-              strokeWidth="0.7"
-            />
-            <path
-              opacity="0.3"
-              d="M50.5215 7.42229L20.325 1.14771L46.2077 62.3249L77.1885 68.2073L50.5215 7.42229Z"
-              fill="url(#paint2_linear_94:889)"
-            />
-            <path
-              d="M50.5215 7.42229L20.325 1.14771L46.2077 62.3249L76.7963 68.2073L50.5215 7.42229Z"
-              stroke="url(#paint3_linear_94:889)"
-              strokeWidth="0.7"
-            />
-            <path
-              opacity="0.3"
-              d="M17.9721 93.3057L-14.9695 88.2076L46.2077 62.325L77.1885 68.2074L17.9721 93.3057Z"
-              fill="url(#paint4_linear_94:889)"
-            />
-            <path
-              d="M17.972 93.3057L-14.1852 88.2076L46.2077 62.325L77.1884 68.2074L17.972 93.3057Z"
-              stroke="url(#paint5_linear_94:889)"
-              strokeWidth="0.7"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_94:889"
-                x1="-41"
-                y1="21.8445"
-                x2="36.9671"
-                y2="59.8878"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#00A7B5" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#00A7B5" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_94:889"
-                x1="25.6675"
-                y1="95.9631"
-                x2="-42.9608"
-                y2="20.668"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#00A7B5" stopOpacity="0" />
-                <stop offset="1" stopColor="#00A7B5" stopOpacity="0.51" />
-              </linearGradient>
-              <linearGradient
-                id="paint2_linear_94:889"
-                x1="20.325"
-                y1="-3.98039"
-                x2="90.6248"
-                y2="25.1062"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#00A7B5" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#00A7B5" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint3_linear_94:889"
-                x1="18.3642"
-                y1="-1.59742"
-                x2="113.9"
-                y2="80.6826"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#00A7B5" stopOpacity="0" />
-                <stop offset="1" stopColor="#00A7B5" stopOpacity="0.51" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_94:889"
-                x1="61.1098"
-                y1="62.3249"
-                x2="-8.82468"
-                y2="58.2156"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#00A7B5" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#00A7B5" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint5_linear_94:889"
-                x1="65.4236"
-                y1="65.0701"
-                x2="24.0178"
-                y2="41.6598"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#00A7B5" stopOpacity="0" />
-                <stop offset="1" stopColor="#00A7B5" stopOpacity="0.51" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 
