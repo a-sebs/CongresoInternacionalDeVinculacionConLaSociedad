@@ -27,9 +27,6 @@ const Hero = () => {
       {/* Sección de botones CTA */}
       <section 
         className="relative bg-white py-32 md:py-48 bg-center bg-no-repeat bg-cover"
-        style={{
-          backgroundImage: 'url(/images/hero/background_portal_transparente_2.png)',
-        }}
       >
         <div className="container relative z-10">
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-8">

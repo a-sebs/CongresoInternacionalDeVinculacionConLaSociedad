@@ -21,7 +21,15 @@ const ParticipaPage = () => {
       <Breadcrumb pageName="Participa" description="Explora las diferentes formas de participar en Conexión 2026" />
       
       {/* Bloque 1: Introducción */}
-      <section className="py-16 md:py-[120px]">
+      <section 
+        className="py-16 md:py-[120px]"
+        style={{
+          backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}
+      >
         <div className="container">
           <div className="mx-auto mb-12 max-w-[800px] text-center">
             <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -39,7 +47,15 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 2: Inscripción general */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section 
+        className="bg-gray-light py-16 md:py-[120px]"
+        style={{
+          backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}
+      >
         <div className="container">
           <div className="mx-auto max-w-[700px]">
             <div className="mb-8 text-center">

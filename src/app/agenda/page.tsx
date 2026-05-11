@@ -117,7 +117,15 @@ const CongresosAgendaPage = () => {
       <Breadcrumb pageName="Congreso y Agenda" description="Conoce la programación del evento" />
 
       {/* Bloque 1: Presentación */}
-      <section className="py-16 md:py-[120px]">
+      <section 
+        className="py-16 md:py-[120px]"
+        style={{
+          backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}
+      >
         <div className="container">
           <div className="mx-auto mb-12 max-w-[800px] text-center">
             <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -142,7 +150,15 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 2: Objetivo */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section 
+        className="bg-gray-light py-16 md:py-[120px]"
+        style={{
+          backgroundImage: "url('/images/hero/background_portal_transparente_1.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}
+      >
         <div className="container">
           <div className="mx-auto max-w-[800px]">
             <h2 className="mb-6 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -189,7 +205,15 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 4: Ejes temáticos */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section 
+        className="bg-gray-light py-16 md:py-[120px]"
+        style={{
+          backgroundImage: "url('/images/hero/background_portal_transparente_1.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}
+      >
         <div className="container">
           <SectionTitle
             title="Ejes temáticos"
@@ -267,7 +291,15 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 8: Ponentes */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section 
+        className="bg-gray-light py-16 md:py-[120px]"
+        style={{
+          backgroundImage: "url('/images/hero/background_portal_transparente_1.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed"
+        }}
+      >
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
             <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">

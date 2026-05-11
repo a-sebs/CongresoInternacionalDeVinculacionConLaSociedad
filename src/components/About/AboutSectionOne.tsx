@@ -6,6 +6,12 @@ const AboutSectionOne = () => {
     <section 
       id="about" 
       className="relative bg-gray-light py-16 md:py-[120px]"
+      style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}
     >
       <div className="container relative z-10">
         <div className="mx-auto max-w-[800px] text-center">
