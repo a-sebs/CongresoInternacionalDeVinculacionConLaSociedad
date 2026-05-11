@@ -3,15 +3,7 @@ import SectionTitle from "../Common/SectionTitle";
 
 const AboutSectionTwo = () => {
   return (
-    <section 
-      className="py-16 md:py-20 lg:py-28"
-      style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_1.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}
-    >
+    <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Ejes Temáticos del Congreso"
