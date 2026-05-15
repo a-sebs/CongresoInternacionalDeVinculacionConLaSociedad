@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Breadcrumb from "@/components/Common/Breadcrumb";
 import SectionTitle from "@/components/Common/SectionTitle";
 import Link from "next/link";
 
@@ -18,8 +17,6 @@ const ParticipaPage = () => {
 
   return (
     <>
-      <Breadcrumb pageName="Participa" description="Explora las diferentes formas de participar en Conexión 2026" />
-      
       {/* Bloque 1: Introducción */}
       <section 
         className="py-16 md:py-[120px]"
@@ -35,10 +32,10 @@ const ParticipaPage = () => {
             <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Participa en Conexión 2026
             </h1>
-            <p className="mb-4 text-xl text-body-color">
+            <p className="mb-4 text-lg text-body-color md:text-xl lg:text-2xl">
               Inscripción, postulación de ponencias, feria y pago en un solo lugar.
             </p>
-            <p className="text-base text-body-color">
+            <p className="text-lg text-body-color md:text-xl lg:text-2xl">
               Aquí encontrarás los accesos para registrarte como asistente, postular una ponencia, 
               aplicar a la feria y realizar tu pago en línea.
             </p>
@@ -65,7 +62,7 @@ const ParticipaPage = () => {
               <p className="mb-4 text-lg font-semibold text-primary">
                 Registro para asistentes y participantes del evento
               </p>
-              <p className="text-base text-body-color">
+              <p className="text-lg text-body-color md:text-xl lg:text-2xl">
                 Completa tu registro para participar en las actividades académicas, 
                 la agenda del congreso y los espacios de articulación.
               </p>
@@ -73,7 +70,7 @@ const ParticipaPage = () => {
             <div className="flex justify-center gap-4">
               <Link
                 href="#"
-                className="rounded-xs bg-primary px-6 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                className="rounded-xs bg-primary px-6 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"
               >
                 Inscríbete al congreso
               </Link>
@@ -82,39 +79,13 @@ const ParticipaPage = () => {
         </div>
       </section>
 
-      {/* Bloque 3: Postulación a ponencias */}
-      <section className="py-16 md:py-[120px]">
-        <div className="container">
-          <div className="mx-auto max-w-[700px]">
-            <div className="mb-8 text-center">
-              <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-                Postulación a ponencias
-              </h2>
-              <p className="mb-4 text-lg font-semibold text-primary">
-                Experiencias, resultados y buenas prácticas en vinculación con la sociedad
-              </p>
-              <p className="text-base text-body-color mb-8">
-                Convocatoria abierta para docentes, investigadores y gestores que deseen 
-                presentar ponencias alineadas a los ejes temáticos del congreso.
-              </p>
-            </div>
-            
-            <div className="flex flex-col items-center justify-center gap-6">
-              <a
-                href="https://docs.google.com/forms/..."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-32 py-8 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-              >
-                Postula tu Ponencia
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Bloque 4: Postulación a la feria */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <div className="mx-auto max-w-[700px]">
             <div className="mb-8 text-center">
@@ -124,7 +95,7 @@ const ParticipaPage = () => {
               <p className="mb-4 text-lg font-semibold text-primary">
                 Proyectos de vinculación, laboratorios y servicios especializados
               </p>
-              <p className="text-base text-body-color mb-8">
+              <p className="text-lg text-body-color mb-8 md:text-xl lg:text-2xl">
                 Espacio para iniciativas institucionales que busquen visibilizar capacidades, 
                 resultados y oportunidades de articulación.
               </p>
@@ -135,7 +106,7 @@ const ParticipaPage = () => {
                 href="https://docs.google.com/forms/..."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-32 py-8 text-xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                className="rounded-xs bg-primary px-32 py-8 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"
               >
                 Postula a la Feria
               </a>
@@ -145,7 +116,12 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 5: Pago en línea */}
-      <section className="py-16 md:py-[120px]">
+      <section className="py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
             <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -154,17 +130,17 @@ const ParticipaPage = () => {
             <p className="mb-4 text-lg font-semibold text-primary">
               Accede a tarifas, categorías e instrucciones de pago
             </p>
-            <p className="mb-8 text-base text-body-color">
+            <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
               Esta sección permitirá realizar el pago en línea y validar la participación en el 
               congreso, una vez se definan oficialmente las tarifas.
             </p>
             <div className="flex justify-center gap-4">
-              <button className="rounded-xs bg-primary px-6 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80">
+              <button className="rounded-xs bg-primary px-6 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl">
                 Realiza tu pago
               </button>
               <Link
                 href="#"
-                className="rounded-xs border border-primary px-6 py-3 text-base font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10"
+                className="rounded-xs border border-primary px-6 py-3 text-lg font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 md:text-xl lg:text-2xl"
               >
                 Ver tarifas
               </Link>
@@ -174,7 +150,12 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 6: Fechas clave */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <SectionTitle
             title="Fechas importantes"
@@ -192,7 +173,7 @@ const ParticipaPage = () => {
                 key={index}
                 className="rounded-lg bg-white p-6 text-center"
               >
-                <p className="text-base font-semibold text-body-color">
+                <p className="text-lg font-semibold text-body-color md:text-xl lg:text-2xl">
                   {date}
                 </p>
                 <p className="mt-2 text-lg font-bold text-primary">Por definir</p>
@@ -203,7 +184,12 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 7: Contacto */}
-      <section className="py-16 md:py-[120px]">
+      <section className="py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
             <h2 className="mb-2 text-2xl font-bold text-black md:text-3xl">
@@ -221,7 +207,7 @@ const ParticipaPage = () => {
 
             <form onSubmit={handleSubmit} className="mb-8 text-left">
               <div className="mb-4">
-                <label className="mb-2 block text-base font-semibold text-black">
+                <label className="mb-2 block text-lg font-semibold text-black md:text-xl lg:text-2xl">
                   Correo electrónico
                 </label>
                 <input
@@ -235,7 +221,7 @@ const ParticipaPage = () => {
               </div>
               <button
                 type="submit"
-                className="w-full rounded-xs bg-primary px-6 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+                className="w-full rounded-xs bg-primary px-6 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"
               >
                 Escríbenos
               </button>
@@ -243,7 +229,7 @@ const ParticipaPage = () => {
 
             <Link
               href="#"
-              className="rounded-xs border border-primary px-6 py-3 text-base font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10"
+              className="rounded-xs border border-primary px-6 py-3 text-lg font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 md:text-xl lg:text-2xl"
             >
               Solicitar información
             </Link>

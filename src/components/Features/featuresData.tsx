@@ -13,7 +13,7 @@ const featuresData: Feature[] = [
         className="w-auto h-auto"
       />
     ),
-    title: "Innovación, Transferencia Tecnológica y Desarrollo",
+    title: "Transferencia Tecnológica y Desarrollo",
     paragraph:
       "Este eje reúne a profesores, investigadores, empresas y especialistas en transferencia tecnológica para compartir avances, proyectos innovadores y experiencias en desarrollo tecnológico que impacten positivamente en la sociedad y economía.",
   },

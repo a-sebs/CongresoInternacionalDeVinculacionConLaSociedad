@@ -25,7 +25,7 @@ const Pricing = () => {
                 isMonthly
                   ? "pointer-events-none text-primary"
                   : "text-dark"
-              } mr-4 cursor-pointer text-base font-semibold`}
+              } mr-4 cursor-pointer text-lg font-semibold`}
             >
               Monthly
             </span>
@@ -50,7 +50,7 @@ const Pricing = () => {
                 isMonthly
                   ? "text-dark"
                   : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
+              } ml-4 cursor-pointer text-lg font-semibold`}
             >
               Yearly
             </span>

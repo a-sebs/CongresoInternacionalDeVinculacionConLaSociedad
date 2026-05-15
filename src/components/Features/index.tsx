@@ -5,7 +5,12 @@ import featuresData from "./featuresData";
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
+      <section id="features" className="py-16 md:py-20 lg:py-28" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <SectionTitle
             title="Ejes Temáticos del Congreso"

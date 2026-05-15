@@ -20,10 +20,10 @@ const Footer = () => {
                   height={60}
                 />
               </Link>
-              <h3 className="text-sm font-semibold text-white mb-3">
+              <h3 className="text-base font-semibold text-white mb-3">
                 Congreso Internacional de Vinculación con la Sociedad
               </h3>
-              <p className="text-sm leading-relaxed text-gray-300">
+              <p className="text-base leading-relaxed text-gray-300">
                 Un espacio académico e institucional para fortalecer la articulación entre universidades, sector público, empresas y actores sociales, promoviendo experiencias, proyectos y buenas prácticas de vinculación con impacto.
               </p>
             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/participa"
-                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
                     Inscríbete
@@ -61,7 +61,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/participa"
-                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
                     Presenta tu Ponencia
@@ -70,7 +70,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/participa"
-                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
                     Feria y Networking
@@ -79,7 +79,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/participa"
-                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
                     Auspicios
@@ -99,7 +99,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/about"
-                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
                     Sobre el Congreso
@@ -108,7 +108,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/agenda"
-                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
                     Agenda
@@ -117,7 +117,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
-                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
                     Ponentes
@@ -126,7 +126,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
-                    className="text-sm text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                   >
                     <span className="w-1.5 h-1.5 bg-[#00A7B5] rounded-full"></span>
                     Galería
@@ -155,14 +155,14 @@ const Footer = () => {
                   Contacto
                 </h2>
               </div>
-              <p className="text-sm text-gray-300 mb-6">
+              <p className="text-base text-gray-300 mb-6">
                 Consultas sobre inscripciones, ponencias, feria, pagos y auspicios
               </p>
               <div className="mb-4">
-                <p className="text-sm text-gray-300 mb-2">Correo electrónico:</p>
+                <p className="text-base text-gray-300 mb-2">Correo electrónico:</p>
                 <a
                   href="mailto:congresovinculacion@epn.edu.ec"
-                  className="text-sm text-[#00A7B5] hover:text-[#00B5E2] duration-300 flex items-center gap-2"
+                  className="text-base text-[#00A7B5] hover:text-[#00B5E2] duration-300 flex items-center gap-2"
                 >
                   <svg
                     width="18"

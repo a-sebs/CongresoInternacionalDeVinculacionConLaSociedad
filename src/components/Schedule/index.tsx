@@ -10,7 +10,7 @@ const Schedule = () => {
           center
         />
         <div className="text-center">
-          <p className="text-lg text-body-color">
+          <p className="text-lg text-body-color md:text-xl lg:text-2xl">
             Próximamente se compartirán más detalles del cronograma.
           </p>
         </div>

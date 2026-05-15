@@ -3,10 +3,12 @@ import { Brand } from "@/types/brand";
 const brandsData: Brand[] = [
   {
     id: 1,
-    name: "Biblioteca Espejo",
+    name: "REUVIC",
     href: "#",
-    image: "/images/brands/LOGO BIBLIOTECA ESPEJO.png",
-    imageLight: "/images/brands/LOGO BIBLIOTECA ESPEJO.png",
+    image: "/images/brands/LOGO REUVIC.png",
+    imageLight: "/images/brands/LOGO REUVIC.png",
+    category: "organized",
+    size: "large",
   },
   {
     id: 2,
@@ -14,13 +16,17 @@ const brandsData: Brand[] = [
     href: "#",
     image: "/images/brands/LOGO EPN.png",
     imageLight: "/images/brands/LOGO EPN.png",
+    category: "organized",
+    size: "large",
   },
   {
     id: 3,
-    name: "Libertad",
+    name: "Biblioteca Nacional",
     href: "#",
-    image: "/images/brands/LOGO LIBERTAD.png",
-    imageLight: "/images/brands/LOGO LIBERTAD.png",
+    image: "/images/brands/LOGO BIBLIOTECA ESPEJO.png",
+    imageLight: "/images/brands/LOGO BIBLIOTECA ESPEJO.png",
+    category: "supported",
+    size: "medium",
   },
   {
     id: 4,
@@ -28,13 +34,8 @@ const brandsData: Brand[] = [
     href: "#",
     image: "/images/brands/LOGO RENSEG.png",
     imageLight: "/images/brands/LOGO RENSEG.png",
-  },
-  {
-    id: 5,
-    name: "REUVIC",
-    href: "#",
-    image: "/images/brands/LOGO REUVIC.png",
-    imageLight: "/images/brands/LOGO REUVIC.png",
+    category: "supported",
+    size: "medium",
   },
 ];
 

@@ -19,10 +19,10 @@ const SigninPage = () => {
                 <h3 className="mb-3 text-center text-2xl font-bold text-black sm:text-3xl">
                   Sign in to your account
                 </h3>
-                <p className="text-body-color mb-11 text-center text-base font-medium">
+                <p className="text-body-color mb-11 text-center text-lg font-medium md:text-xl">
                   Login to your account for a faster checkout.
                 </p>
-                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300">
+                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300 md:text-xl">
                   <span className="mr-3">
                     <svg
                       width="20"
@@ -59,7 +59,7 @@ const SigninPage = () => {
                   Sign in with Google
                 </button>
 
-                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300">
+                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300 md:text-xl">
                   <span className="mr-3">
                     <svg
                       fill="currentColor"
@@ -75,7 +75,7 @@ const SigninPage = () => {
                 </button>
                 <div className="mb-8 flex items-center justify-center">
                   <span className="bg-body-color/50 hidden h-[1px] w-full max-w-[70px] sm:block"></span>
-                  <p className="text-body-color w-full px-5 text-center text-base font-medium">
+                  <p className="text-body-color w-full px-5 text-center text-lg font-medium md:text-xl">
                     Or, sign in with your email
                   </p>
                   <span className="bg-body-color/50 hidden h-[1px] w-full max-w-[70px] sm:block"></span>
@@ -84,7 +84,7 @@ const SigninPage = () => {
                   <div className="mb-8">
                     <label
                       htmlFor="email"
-                      className="text-dark mb-3 block text-sm"
+                      className="text-dark mb-3 block text-base"
                     >
                       Your Email
                     </label>
@@ -92,13 +92,13 @@ const SigninPage = () => {
                       type="email"
                       name="email"
                       placeholder="Enter your Email"
-                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300"
+                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300"
                     />
                   </div>
                   <div className="mb-8">
                     <label
                       htmlFor="password"
-                      className="text-dark mb-3 block text-sm"
+                      className="text-dark mb-3 block text-base"
                     >
                       Your Password
                     </label>
@@ -106,14 +106,14 @@ const SigninPage = () => {
                       type="password"
                       name="password"
                       placeholder="Enter your Password"
-                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300"
+                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300 md:text-xl"
                     />
                   </div>
                   <div className="mb-8 flex flex-col justify-between sm:flex-row sm:items-center">
                     <div className="mb-4 sm:mb-0">
                       <label
                         htmlFor="checkboxLabel"
-                        className="text-body-color flex cursor-pointer items-center text-sm font-medium select-none"
+                        className="text-body-color flex cursor-pointer items-center text-base font-medium select-none"
                       >
                         <div className="relative">
                           <input
@@ -146,19 +146,19 @@ const SigninPage = () => {
                     <div>
                       <a
                         href="#0"
-                        className="text-primary text-sm font-medium hover:underline"
+                        className="text-primary text-base font-medium hover:underline"
                       >
                         Forgot Password?
                       </a>
                     </div>
                   </div>
                   <div className="mb-6">
-                    <button className="shadow-submit bg-primary hover:bg-primary/90 flex w-full items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300">
+                    <button className="shadow-submit bg-primary hover:bg-primary/90 flex w-full items-center justify-center rounded-xs px-9 py-4 text-lg font-medium text-white duration-300 md:text-xl">
                       Sign in
                     </button>
                   </div>
                 </form>
-                <p className="text-body-color text-center text-base font-medium">
+                <p className="text-body-color text-center text-lg font-medium md:text-xl">
                   Don’t you have an account?{" "}
                   <Link href="/signup" className="text-primary hover:underline">
                     Sign up

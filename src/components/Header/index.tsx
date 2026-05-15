@@ -33,7 +33,7 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="w-100 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
                 className="header-logo block w-full py-5 lg:py-2"
@@ -41,8 +41,8 @@ const Header = () => {
                 <Image
                   src="/images/logo/logo_conexion.png"
                   alt="Conexión 2026"
-                  width={140}
-                  height={30}
+                  width={180}
+                  height={45}
                   className="w-full"
                 />
               </Link>
@@ -85,7 +85,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex py-2 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-primary"
                                 : "text-dark hover:text-primary"
@@ -97,7 +97,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">

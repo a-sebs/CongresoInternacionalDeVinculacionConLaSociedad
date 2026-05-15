@@ -27,7 +27,7 @@ const AboutSectionTwo = () => {
               <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl text-center">
                 Innovación, Transferencia Tecnológica y Desarrollo
               </h3>
-              <p className="text-body-color pr-[10px] text-base leading-relaxed font-medium text-center">
+              <p className="text-body-color pr-[10px] text-lg leading-relaxed font-medium text-center md:text-xl lg:text-2xl">
                 Este eje reúne a profesores, investigadores, empresas y especialistas en transferencia tecnológica para compartir avances, proyectos innovadores y experiencias en desarrollo tecnológico que impacten positivamente en la sociedad y economía.
               </p>
             </div>
@@ -48,7 +48,7 @@ const AboutSectionTwo = () => {
               <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl text-center">
                 Innovación Social e Impacto en la Sociedad
               </h3>
-              <p className="text-body-color pr-[10px] text-base leading-relaxed font-medium text-center">
+              <p className="text-body-color pr-[10px] text-lg leading-relaxed font-medium text-center md:text-xl lg:text-2xl">
                 Este eje se enfoca en iniciativas de impacto social, vinculación comunitaria y soluciones innovadoras a problemas sociales. Espacio para que instituciones académicas, ONGs y entidades públicas compartan sus experiencias y mejores prácticas.
               </p>
             </div>

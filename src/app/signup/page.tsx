@@ -19,10 +19,10 @@ const SignupPage = () => {
                 <h3 className="mb-3 text-center text-2xl font-bold text-black sm:text-3xl">
                   Create your account
                 </h3>
-                <p className="text-body-color mb-11 text-center text-base font-medium">
-                  It’s totally free and super easy
+                <p className="text-body-color mb-11 text-center text-lg font-medium md:text-xl">
+                  It's totally free and super easy
                 </p>
-                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300">
+                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300 md:text-xl">
                   <span className="mr-3">
                     <svg
                       width="20"
@@ -59,7 +59,7 @@ const SignupPage = () => {
                   Sign in with Google
                 </button>
 
-                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300">
+                <button className="border-stroke text-body-color hover:border-primary hover:bg-primary/5 hover:text-primary mb-6 flex w-full items-center justify-center rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300 md:text-xl">
                   <span className="mr-3">
                     <svg
                       fill="currentColor"
@@ -75,7 +75,7 @@ const SignupPage = () => {
                 </button>
                 <div className="mb-8 flex items-center justify-center">
                   <span className="bg-body-color/50 hidden h-[1px] w-full max-w-[60px] sm:block"></span>
-                  <p className="text-body-color w-full px-5 text-center text-base font-medium">
+                  <p className="text-body-color w-full px-5 text-center text-lg font-medium md:text-xl">
                     Or, register with your email
                   </p>
                   <span className="bg-body-color/50 hidden h-[1px] w-full max-w-[60px] sm:block"></span>
@@ -84,7 +84,7 @@ const SignupPage = () => {
                   <div className="mb-8">
                     <label
                       htmlFor="name"
-                      className="text-dark mb-3 block text-sm"
+                      className="text-dark mb-3 block text-base"
                     >
                       {" "}
                       Full Name{" "}
@@ -93,13 +93,13 @@ const SignupPage = () => {
                       type="text"
                       name="name"
                       placeholder="Enter your full name"
-                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300"
+                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300 md:text-xl"
                     />
                   </div>
                   <div className="mb-8">
                     <label
                       htmlFor="email"
-                      className="text-dark mb-3 block text-sm"
+                      className="text-dark mb-3 block text-base"
                     >
                       {" "}
                       Work Email{" "}
@@ -108,13 +108,13 @@ const SignupPage = () => {
                       type="email"
                       name="email"
                       placeholder="Enter your Email"
-                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300"
+                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300 md:text-xl"
                     />
                   </div>
                   <div className="mb-8">
                     <label
                       htmlFor="password"
-                      className="text-dark mb-3 block text-sm"
+                      className="text-dark mb-3 block text-base"
                     >
                       {" "}
                       Your Password{" "}
@@ -123,13 +123,13 @@ const SignupPage = () => {
                       type="password"
                       name="password"
                       placeholder="Enter your Password"
-                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden transition-all duration-300"
+                      className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-lg outline-hidden transition-all duration-300"
                     />
                   </div>
                   <div className="mb-8 flex">
                     <label
                       htmlFor="checkboxLabel"
-                      className="text-body-color flex cursor-pointer text-sm font-medium select-none"
+                      className="text-body-color flex cursor-pointer text-base font-medium select-none"
                     >
                       <div className="relative">
                         <input
@@ -171,12 +171,12 @@ const SignupPage = () => {
                     </label>
                   </div>
                   <div className="mb-6">
-                    <button className="shadow-submit bg-primary hover:bg-primary/90 flex w-full items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300">
+                    <button className="shadow-submit bg-primary hover:bg-primary/90 flex w-full items-center justify-center rounded-xs px-9 py-4 text-lg font-medium text-white duration-300 md:text-xl">
                       Sign up
                     </button>
                   </div>
                 </form>
-                <p className="text-body-color text-center text-base font-medium">
+                <p className="text-body-color text-center text-lg font-medium md:text-xl">
                   Already using Startup?{" "}
                   <Link href="/signin" className="text-primary hover:underline">
                     Sign in

@@ -21,14 +21,14 @@ const AboutSectionOne = () => {
           <p className="mb-6 text-2xl font-semibold text-primary md:text-3xl">
             Diálogo, intercambio académico y articulación interinstitucional
           </p>
-          <p className="mb-8 text-lg leading-relaxed text-body-color md:text-xl">
+          <p className="mb-8 text-lg leading-relaxed text-body-color md:text-xl lg:text-2xl">
             El congreso busca fortalecer la institucionalidad de la vinculación, impulsar la 
             transferencia de conocimiento, promover la innovación y consolidar redes de cooperación 
             entre instituciones de educación superior y actores del entorno.
           </p>
           <Link
             href="/agenda"
-            className="inline-block rounded-xs bg-primary px-8 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+            className="inline-block rounded-xs bg-primary px-8 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"
           >
             Conoce el congreso
           </Link>

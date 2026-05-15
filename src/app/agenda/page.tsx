@@ -114,49 +114,20 @@ const CongresosAgendaPage = () => {
 
   return (
     <>
-      <Breadcrumb pageName="Congreso y Agenda" description="Conoce la programación del evento" />
-
-      {/* Bloque 1: Presentación */}
-      <section 
-        className="py-16 md:py-[120px]"
-        style={{
-          backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed"
-        }}
-      >
-        <div className="container">
-          <div className="mx-auto mb-12 max-w-[800px] text-center">
-            <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-              Congreso y Agenda
-            </h1>
-            <p className="mb-4 text-xl font-semibold text-primary">
-              Un espacio académico para fortalecer la vinculación con la sociedad
-            </p>
-            <p className="text-base leading-relaxed text-body-color">
-              El congreso promueve el intercambio de experiencias, la articulación de funciones 
-              sustantivas, la innovación, la transferencia tecnológica y la construcción de alianzas 
-              entre universidades, empresas, actores públicos y sociedad civil.
-            </p>
-            <Link
-              href="/participa"
-              className="mt-8 inline-block rounded-xs bg-primary px-8 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-            >
-              Ver convocatoria general
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Bloque 2: Objetivo */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <div className="mx-auto max-w-[800px]">
             <h2 className="mb-6 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Objetivo del congreso
             </h2>
-            <p className="text-center text-lg leading-relaxed text-body-color md:text-xl">
+            <p className="text-center text-lg leading-relaxed text-body-color md:text-xl lg:text-2xl">
               Generar espacios de diálogo, intercambio académico y colaboración para fortalecer 
               la vinculación con la sociedad, desarrollar talento humano e impulsar la 
               internacionalización y la transferencia tecnológica.
@@ -166,7 +137,12 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 3: Público objetivo */}
-      <section className="py-16 md:py-[120px]">
+      <section className="py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <SectionTitle
             title="¿A quién está dirigido?"
@@ -187,7 +163,7 @@ const CongresosAgendaPage = () => {
                     <img src={`/images/brands/${target.icon}`} alt={target.label} className="h-40 w-40 object-contain" />
                   </div>
                 </div>
-                <p className="font-semibold text-black text-base md:text-lg">
+                <p className="font-semibold text-black text-lg md:text-xl lg:text-2xl">
                   {target.label}
                 </p>
               </div>
@@ -197,7 +173,12 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 4: Ejes temáticos */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <SectionTitle
             title="Ejes temáticos"
@@ -220,7 +201,7 @@ const CongresosAgendaPage = () => {
                 <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl text-center">
                   Innovación, Transferencia Tecnológica y Desarrollo
                 </h3>
-                <p className="text-body-color text-base leading-relaxed font-medium text-center">
+                <p className="text-body-color text-lg leading-relaxed font-medium text-center md:text-xl lg:text-2xl">
                   Vinculación, valorización del conocimiento y alianzas universidad–empresa–Estado.
                 </p>
               </div>
@@ -240,7 +221,7 @@ const CongresosAgendaPage = () => {
                 <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl text-center">
                   Innovación Social e Impacto en la Sociedad
                 </h3>
-                <p className="text-body-color text-base leading-relaxed font-medium text-center">
+                <p className="text-body-color text-lg leading-relaxed font-medium text-center md:text-xl lg:text-2xl">
                   Transformación social, proyectos participativos y desarrollo sostenible.
                 </p>
               </div>
@@ -250,7 +231,12 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 7: Feria */}
-      <section className="py-16 md:py-[120px]">
+      <section className="py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
             <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -259,14 +245,14 @@ const CongresosAgendaPage = () => {
             <p className="mb-4 text-lg font-semibold text-primary">
               Espacio para visibilizar proyectos de vinculación y capacidades institucionales
             </p>
-            <p className="mb-8 text-base text-body-color">
+            <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
               La feria contempla stands para proyectos de vinculación y para laboratorios o 
               servicios especializados, como un espacio de networking, difusión e interacción 
               entre instituciones y actores del entorno.
             </p>
             <Link
               href="/participa"
-              className="rounded-xs bg-primary px-8 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+              className="rounded-xs bg-primary px-8 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"
             >
               Postula a la feria
             </Link>
@@ -274,32 +260,13 @@ const CongresosAgendaPage = () => {
         </div>
       </section>
 
-      {/* Bloque 8: Ponentes */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
-        <div className="container">
-          <div className="mx-auto max-w-[800px] text-center">
-            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-              Ponentes y panelistas
-            </h2>
-            <p className="mb-4 text-lg font-semibold text-primary">
-              Nacionales e internacionales
-            </p>
-            <p className="text-base text-body-color">
-              Próximamente se publicará el listado oficial de conferencistas, panelistas y 
-              moderadores del evento.
-            </p>
-            <Link
-              href="#"
-              className="mt-8 inline-block rounded-xs border border-primary px-8 py-3 text-base font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10"
-            >
-              Ver ponentes
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Tabla de Agenda Detallada */}
-      <section className="py-16 md:py-[120px]">
+      <section className="py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
         <div className="container">
           <h2 className="mb-8 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
             Agenda del Evento
@@ -315,7 +282,7 @@ const CongresosAgendaPage = () => {
                   : "border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
               }`}
             >
-              Día 1
+              28 de Octubre
             </button>
             <button
               onClick={() => setActiveDay(2)}
@@ -325,7 +292,7 @@ const CongresosAgendaPage = () => {
                   : "border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
               }`}
             >
-              Día 2
+              29 de Octubre
             </button>
           </div>
 
