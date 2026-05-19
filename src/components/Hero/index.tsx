@@ -50,14 +50,6 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
             >
-              Postula tu Ponencia
-            </a>
-            <a
-              href="https://docs.google.com/forms/..."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
-            >
               Postula a la Feria
             </a>
           </div>

@@ -79,7 +79,40 @@ const ParticipaPage = () => {
         </div>
       </section>
 
-      {/* Bloque 4: Postulación a la feria */}
+      {/* Bloque 4: Pago en línea */}
+      <section className="py-16 md:py-[120px]" style={{
+        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed"
+      }}>
+        <div className="container">
+          <div className="mx-auto max-w-[700px] text-center">
+            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
+              Pago de inscripción
+            </h2>
+            <p className="mb-4 text-lg font-semibold text-primary">
+              Accede a tarifas, categorías e instrucciones de pago
+            </p>
+            <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
+              Esta sección permitirá realizar el pago en línea y validar la participación en el 
+              congreso, una vez se definan oficialmente las tarifas.
+            </p>
+            <div className="flex justify-center gap-4">
+              <button className="rounded-xs bg-primary px-6 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl">
+                Realiza tu pago
+              </button>
+              <Link
+                href="#"
+                className="rounded-xs border border-primary px-6 py-3 text-lg font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 md:text-xl lg:text-2xl"
+              >
+                Ver tarifas
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Bloque 5: Postulación a la feria */}
       <section className="bg-gray-light py-16 md:py-[120px]" style={{
         backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
         backgroundSize: "cover",
@@ -110,40 +143,6 @@ const ParticipaPage = () => {
               >
                 Postula a la Feria
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Bloque 5: Pago en línea */}
-      <section className="py-16 md:py-[120px]" style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
-        <div className="container">
-          <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-              Pago de inscripción
-            </h2>
-            <p className="mb-4 text-lg font-semibold text-primary">
-              Accede a tarifas, categorías e instrucciones de pago
-            </p>
-            <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
-              Esta sección permitirá realizar el pago en línea y validar la participación en el 
-              congreso, una vez se definan oficialmente las tarifas.
-            </p>
-            <div className="flex justify-center gap-4">
-              <button className="rounded-xs bg-primary px-6 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl">
-                Realiza tu pago
-              </button>
-              <Link
-                href="#"
-                className="rounded-xs border border-primary px-6 py-3 text-lg font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 md:text-xl lg:text-2xl"
-              >
-                Ver tarifas
-              </Link>
             </div>
           </div>
         </div>

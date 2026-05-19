@@ -21,10 +21,10 @@ const brandsData: Brand[] = [
   },
   {
     id: 3,
-    name: "Biblioteca Nacional",
+    name: "Universidad Libertad",
     href: "#",
-    image: "/images/brands/LOGO BIBLIOTECA ESPEJO.png",
-    imageLight: "/images/brands/LOGO BIBLIOTECA ESPEJO.png",
+    image: "/images/brands/LOGO LIBERTAD.png",
+    imageLight: "/images/brands/LOGO LIBERTAD.png",
     category: "supported",
     size: "medium",
   },

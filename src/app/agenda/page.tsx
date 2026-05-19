@@ -116,7 +116,7 @@ const CongresosAgendaPage = () => {
     <>
 
       {/* Bloque 2: Objetivo */}
-      <section className="bg-gray-light py-16 md:py-[120px]" style={{
+      <section className="py-16 md:py-[120px]" style={{
         backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -137,7 +137,7 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 3: Público objetivo */}
-      <section className="py-16 md:py-[120px]" style={{
+      <section className="bg-gray-light py-16 md:py-[120px]" style={{
         backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -173,7 +173,7 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 4: Ejes temáticos */}
-      <section className="bg-gray-light py-16 md:py-[120px]" style={{
+      <section className="py-16 md:py-[120px]" style={{
         backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -231,7 +231,7 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 7: Feria */}
-      <section className="py-16 md:py-[120px]" style={{
+      <section className="bg-gray-light py-16 md:py-[120px]" style={{
         backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -336,8 +336,19 @@ const CongresosAgendaPage = () => {
               </tbody>
             </table>
           </div>
+          <div className="flex flex-col items-center justify-center gap-100 sm:flex-row sm:gap-8 min-h-[250px]">
+            <a
+              href="https://docs.google.com/forms/..."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
+            >
+              Registrate Ahora
+            </a>
+          </div>
         </div>
       </section>
+      
     </>
   );
 };
