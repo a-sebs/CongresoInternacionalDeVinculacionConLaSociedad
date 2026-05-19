@@ -19,7 +19,9 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head>
+        <script src="https://t.contentsquare.net/uxa/1328f5d026ac6.js"></script>
+      </head>
 
       <body className={`bg-[#FCFCFC] ${inter.className}`}>
         <Providers>
