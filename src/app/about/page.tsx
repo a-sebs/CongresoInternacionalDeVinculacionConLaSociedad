@@ -17,8 +17,10 @@ const AboutPage = () => {
         pageName="Cronograma"
         description="Detalle del cronograma de actividades, conferencias y eventos relacionados con el IV Congreso Internacional de Vinculación con Sociedad - Conexión 2026."
       />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      <div id="sobre-congreso">
+        <AboutSectionOne />
+        <AboutSectionTwo />
+      </div>
     </>
   );
 };

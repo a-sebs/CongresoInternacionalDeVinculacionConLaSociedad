@@ -250,18 +250,24 @@ const CongresosAgendaPage = () => {
               servicios especializados, como un espacio de networking, difusión e interacción 
               entre instituciones y actores del entorno.
             </p>
-            <Link
-              href="/participa"
-              className="rounded-xs bg-primary px-8 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"
-            >
-              Postula a la feria
-            </Link>
+            <div className="flex items-center justify-center min-h-32">
+              <a
+                href="/participa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+              >
+                Postula a la feria
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Tabla de Agenda Detallada */}
-      <section className="py-16 md:py-[120px]" style={{
+      <section 
+        id="agenda-congreso"
+        className="py-16 md:py-[120px]" style={{
         backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
