@@ -131,6 +131,11 @@
     scroll-snap-align: start;
   }
 
+  section#home {
+    scroll-snap-align: start;
+    scroll-margin-top: 0px;
+  }
+
   section:not(:first-of-type),
   footer {
     scroll-snap-align: start;
