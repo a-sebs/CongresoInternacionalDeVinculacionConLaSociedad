@@ -29,14 +29,14 @@ const Header = () => {
   return (
     <>
       <header
-        className="header z-40 flex w-full items-center bg-white shadow-one"
+        className="header z-40 flex w-full h-[95px] items-center bg-white shadow-one"
       >
-        <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-100 max-w-full px-4 xl:mr-12">
+        <div className="container h-full">
+          <div className="relative -mx-4 flex h-full items-center justify-between">
+            <div className="w-100 max-w-full px-4 xl:mr-12 h-full flex items-center">
               <Link
                 href="/"
-                className="header-logo block w-full py-5 lg:py-2"
+                className="header-logo block w-full"
               >
                 <Image
                   src="/images/logo/logo_conexion.png"
@@ -47,8 +47,8 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
-              <div>
+            <div className="flex items-center justify-end px-4 h-full lg:flex-1">
+              <div className="h-full flex items-center">
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
@@ -73,19 +73,19 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar border-body-color/50 absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar border-body-color/50 absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:h-full lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
+                  <ul className="block lg:flex lg:items-center lg:space-x-8 lg:h-full">
                     {menuData.map((menuItem, index) => (
-                      <li key={index} className="group relative">
+                      <li key={index} className="group relative flex items-center lg:h-full">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={`flex items-center py-2 text-2xl lg:mr-0 lg:inline-flex lg:items-center lg:px-0 lg:h-full ${
                               usePathName === menuItem.path
                                 ? "text-primary"
                                 : "text-dark hover:text-primary"
@@ -97,7 +97,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-xl lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-2xl lg:mr-0 lg:inline-flex lg:items-center lg:px-0 lg:h-full"
                             >
                               {menuItem.title}
                               <span className="pl-3">

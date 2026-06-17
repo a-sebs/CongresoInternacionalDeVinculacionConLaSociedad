@@ -117,8 +117,22 @@ layer(base);
 }
 
 @layer base {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: "Inter", sans-serif;
+  }
+
+  header {
+    scroll-snap-align: start;
+  }
+
+  section:not(:first-of-type), footer {
+    scroll-snap-align: start;
+    scroll-margin-top: 100px; /* Margen superior para el menú sticky */
   }
 }
 
