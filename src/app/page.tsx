@@ -1,7 +1,6 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
-import FairAndNetworking from "@/components/FairAndNetworking";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import { Metadata } from "next";
@@ -19,7 +18,6 @@ export default function Home() {
       <Hero />
       <AboutSectionOne />
       <Features />
-      <FairAndNetworking />
       <Brands />
     </>
   );

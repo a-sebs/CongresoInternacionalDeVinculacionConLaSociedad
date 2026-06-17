@@ -7,12 +7,7 @@ const Brands = () => {
   const supportedBrands = brandsData.filter((b) => b.category === "supported");
 
   return (
-    <section className="py-16" style={{
-      backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundAttachment: "fixed"
-    }}>
+    <section className="py-16">
       <div className="container">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">

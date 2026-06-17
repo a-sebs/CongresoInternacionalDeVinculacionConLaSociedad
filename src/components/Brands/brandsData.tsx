@@ -20,15 +20,6 @@ const brandsData: Brand[] = [
     size: "large",
   },
   {
-    id: 3,
-    name: "Universidad Libertad",
-    href: "#",
-    image: "/images/brands/LOGO LIBERTAD.png",
-    imageLight: "/images/brands/LOGO LIBERTAD.png",
-    category: "supported",
-    size: "medium",
-  },
-  {
     id: 4,
     name: "RENSEG",
     href: "#",

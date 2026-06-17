@@ -18,12 +18,6 @@ const ParticipaPage = () => {
       {/* Bloque 1: Introducción */}
       <section 
         className="py-16 md:py-[120px]"
-        style={{
-          backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed"
-        }}
       >
         <div className="container">
           <div className="mx-auto mb-12 max-w-[800px] text-center">
@@ -45,12 +39,6 @@ const ParticipaPage = () => {
       <section 
         id="inscripcion"
         className="bg-gray-light py-16 md:py-[120px]"
-        style={{
-          backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed"
-        }}
       >
         <div className="container">
           <div className="mx-auto max-w-[700px]">
@@ -79,12 +67,7 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 4: Pago en línea */}
-      <section className="py-16 md:py-[120px]" style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+      <section className="py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
             <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -122,12 +105,7 @@ const ParticipaPage = () => {
       <section 
         id="feria"
         className="bg-gray-light py-16 md:py-[120px]" 
-        style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+      >
         <div className="container">
           <div className="mx-auto max-w-[700px]">
             <div className="mb-8 text-center">
@@ -158,12 +136,7 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 6: Fechas clave */}
-      <section className="py-16 md:py-[120px]" style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+      <section className="py-16 md:py-[120px]">
         <div className="container">
           <SectionTitle
             title="Fechas importantes"
@@ -195,12 +168,7 @@ const ParticipaPage = () => {
       <section 
         id="contacto"
         className="bg-gray-light py-16 md:py-[120px]" 
-        style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+      >
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
             <h2 className="mb-2 text-2xl font-bold text-black md:text-3xl">

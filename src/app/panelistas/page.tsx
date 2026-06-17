@@ -69,12 +69,6 @@ export default function PanelistasPage() {
       <section
         id="ponentes-panelistas"
         className="py-16 md:py-20 lg:py-28"
-        style={{
-          backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
       >
         <div className="container">
           <div className="w-full text-center">

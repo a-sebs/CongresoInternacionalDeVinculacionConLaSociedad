@@ -29,11 +29,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Accesos Rápidos */}
-          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0">
+          {/* Column 2: Secciones Principales */}
+          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0 mt-8 lg:mt-0">
             <div>
               <h2 className="mb-8 text-lg font-bold text-[#00A7B5]">
-                Accesos Rápidos
+                Secciones Principales
               </h2>
               <ul className="space-y-3">
                 <li>
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Contacto */}
-          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0">
+          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0 mt-8 lg:mt-0">
             <div>
               <h2 className="mb-8 text-lg font-bold text-[#00A7B5]">
                 Contacto

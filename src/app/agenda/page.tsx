@@ -116,12 +116,7 @@ const CongresosAgendaPage = () => {
     <>
 
       {/* Bloque 2: Objetivo */}
-      <section className="py-16 md:py-[120px]" style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+      <section className="py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[800px]">
             <h2 className="mb-6 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -137,12 +132,7 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 3: Público objetivo */}
-      <section className="bg-gray-light py-16 md:py-[120px]" style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <SectionTitle
             title="¿A quién está dirigido?"
@@ -173,12 +163,7 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 4: Ejes temáticos */}
-      <section className="py-16 md:py-[120px]" style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+      <section className="py-16 md:py-[120px]">
         <div className="container">
           <SectionTitle
             title="Ejes temáticos"
@@ -231,12 +216,7 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 7: Feria */}
-      <section className="bg-gray-light py-16 md:py-[120px]" style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
             <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -267,12 +247,8 @@ const CongresosAgendaPage = () => {
       {/* Tabla de Agenda Detallada */}
       <section 
         id="agenda-congreso"
-        className="py-16 md:py-[120px]" style={{
-        backgroundImage: "url('/images/hero/background_portal_transparente_2.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
+        className="py-16 md:py-[120px]"
+      >
         <div className="container">
           <h2 className="mb-8 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
             Agenda del Evento
