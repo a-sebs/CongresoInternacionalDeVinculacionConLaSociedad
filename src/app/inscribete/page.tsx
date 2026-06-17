@@ -18,7 +18,7 @@ const ParticipaPage = () => {
       {/* Bloque 1: Inscripción general */}
       <section
         id="inscripcion"
-        className="bg-gray-light py-16 md:py-[120px]"
+        className="py-16 md:py-[120px]"
       >
         <div className="container">
           <div className="mx-auto max-w-[700px]">
@@ -46,8 +46,8 @@ const ParticipaPage = () => {
         </div>
       </section>
 
-      {/* Bloque 4: Pago en línea */}
-      <section className="py-16 md:py-[120px]">
+      {/* Bloque 2: Pago en línea */}
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
             <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
@@ -81,10 +81,10 @@ const ParticipaPage = () => {
           </div>
         </div>
       </section>
-      {/* Bloque 5: Postulación a la feria */}
+      {/* Bloque 3: Postulación a la feria */}
       <section
         id="feria"
-        className="bg-gray-light py-16 md:py-[120px]"
+        className="py-16 md:py-[120px]"
       >
         <div className="container">
           <div className="mx-auto max-w-[700px]">
@@ -115,8 +115,8 @@ const ParticipaPage = () => {
         </div>
       </section>
 
-      {/* Bloque 6: Fechas clave */}
-      <section className="py-16 md:py-[120px]">
+      {/* Bloque 4: Fechas clave */}
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <SectionTitle
             title="Fechas importantes"
@@ -144,10 +144,10 @@ const ParticipaPage = () => {
         </div>
       </section>
 
-      {/* Bloque 7: Contacto */}
+      {/* Bloque 5: Contacto */}
       <section
         id="contacto"
-        className="bg-gray-light py-16 md:py-[120px]"
+        className="py-16 md:py-[120px]"
       >
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">

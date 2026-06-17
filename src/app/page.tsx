@@ -20,15 +20,15 @@ export default function Home() {
       <AboutSectionOne />
 
       {/* Bloque 2: Objetivo (Movido de Congreso y Agenda) */}
-      <section className="py-16 md:py-[120px]">
+      <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[800px]">
             <h2 className="mb-6 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
               Objetivo del congreso
             </h2>
             <p className="text-center text-lg leading-relaxed text-body-color md:text-xl lg:text-2xl">
-              Generar espacios de diálogo, intercambio académico y colaboración para fortalecer 
-              la vinculación con la sociedad, desarrollar talento humano e impulsar la 
+              Generar espacios de diálogo, intercambio académico y colaboración para fortalecer
+              la vinculación con la sociedad, desarrollar talento humano e impulsar la
               internacionalización y la transferencia tecnológica.
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       {/* Bloque 3: Público objetivo (Movido de Congreso y Agenda) */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section className="py-16 md:py-[120px]">
         <div className="container">
           <SectionTitle
             title="¿A quién está dirigido?"
