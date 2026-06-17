@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/about#sobre-congreso"
+                    href="/agenda"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Sobre el Congreso
