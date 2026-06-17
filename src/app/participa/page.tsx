@@ -123,7 +123,7 @@ const ParticipaPage = () => {
 
             <div className="flex flex-col items-center justify-center gap-6">
               <a
-                href="https://docs.google.com/forms/..."
+                href="https://forms.cloud.microsoft/r/CF7stCeNnM"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xs bg-primary px-32 py-8 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"

@@ -1,10 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import SectionTitle from "@/components/Common/SectionTitle";
-import Link from "next/link";
 
 interface Activity {
   time: string;
@@ -20,56 +16,62 @@ const CongresosAgendaPage = () => {
     {
       time: "08:30 – 09:00",
       activity: "Registro e ingreso",
-      theme: "",
-      speaker: "",
+      theme: "Apoyo logístico del equipo",
+      speaker: "-",
     },
     {
       time: "09:00 – 09:30",
-      activity: "Ceremonia de apertura",
-      theme: "",
-      speaker: "",
+      activity: "Ceremonia de apertura (momento cultural)",
+      theme: "Inauguración formal por parte de autoridades",
+      speaker: "Rector EPN (Phd Traquino Sanchez), Presidenta Reuvic (Phd Ana Santos), Renseg, Caces, CES, MINEDUC",
     },
     {
       time: "09:30 – 10:30",
-      activity: "Conferencia magistral",
-      theme: "Transferencia de conocimiento e innovación",
-      speaker: "Ponente Internacional",
+      activity: "Conferencia magistral 1",
+      theme: "Transferencia de conocimiento e innovación desde la educación superior con énfasis en la vinculación con la sociedad",
+      speaker: "Mgs. Jairo Castañeda (Ministerio de Defensa de Colombia)",
     },
     {
       time: "10:30 – 11:00",
       activity: "Coffee break",
-      theme: "",
-      speaker: "",
-    },
-    {
-      time: "11:00 – 12:30",
-      activity: "Foro con panelistas",
-      theme: "Innovación para mejorar la calidad de vida",
-      speaker: "Especialistas",
-    },
-    {
-      time: "12:30 – 14:00",
-      activity: "Almuerzo",
-      theme: "",
-      speaker: "",
-    },
-    {
-      time: "14:00 – 15:00",
-      activity: "Charla magistral",
-      theme: "Transferencia Tecnológica",
-      speaker: "Especialista",
-    },
-    {
-      time: "15:00 – 16:00",
-      activity: "Presentación de ponencias",
-      theme: "Proyectos de transferencia y vinculación",
-      speaker: "Ponentes seleccionados",
+      theme: "-",
+      speaker: "-",
     },
     {
       time: "10:30 – 13:30",
-      activity: "Feria de proyectos y servicios",
-      theme: "Espacios de networking y difusión",
-      speaker: "",
+      activity: "Feria de proyectos",
+      theme: "Exposición de proyectos plazoleta EARME (10H00 Evento Inaugural)",
+      speaker: "-",
+    },
+    {
+      time: "11:00 – 12:00",
+      activity: "Charla - Magistral 2",
+      theme: "Transferencia Tecnológica: Innovar desde la generación de conocimiento.",
+      speaker: "PhD. Héctor Hidalgo (Universidad Andrés Bello)",
+    },
+    {
+      time: "12:00 – 13:30",
+      activity: "Almuerzo",
+      theme: "Libre",
+      speaker: "-",
+    },
+    {
+      time: "13:30 – 14:30",
+      activity: "Foro Empresarial y Académico",
+      theme: "Transferencia Tecnológica para el Desarrollo Territorial y Productivo",
+      speaker: "-",
+    },
+    {
+      time: "14:30 – 16:00",
+      activity: "Presentación de pitch de investigadores",
+      theme: "Resultados de impacto de proyectos de transferencia de conocimiento y vinculación",
+      speaker: "Pitch – 6 Ponentes",
+    },
+    {
+      time: "16:00 – 16:30",
+      activity: "Reconocimientos proyectos",
+      theme: "-",
+      speaker: "-",
     },
   ];
 
@@ -77,173 +79,55 @@ const CongresosAgendaPage = () => {
     {
       time: "08:30 – 09:00",
       activity: "Registro e ingreso",
-      theme: "",
-      speaker: "",
+      theme: "-",
+      speaker: "-",
     },
     {
       time: "09:00 – 10:00",
-      activity: "Conferencias magistrales",
-      theme: "Impacto social de la educación superior",
-      speaker: "Conferencistas",
+      activity: "Conferencia magistral 1",
+      theme: "Impacto social de la educación superior desde la vinculación con la sociedad",
+      speaker: "Presidenta CACES",
     },
     {
-      time: "10:00 – 11:30",
-      activity: "Foro con panelistas",
-      theme: "Transformación del territorio",
-      speaker: "Rectores y especialistas",
+      time: "10:00 – 11:00",
+      activity: "Conferencia magistral 2",
+      theme: "Gestión del conocimiento para la generación de innovaciones sociales",
+      speaker: "Expositor internacional 2 Parque científico de Innovación Social - Colombia",
     },
     {
-      time: "11:30 – 13:00",
+      time: "11:00 – 12:30",
+      activity: "Foro con 4 panelistas (RECTORES)",
+      theme: "Innovación y transformación del territorio desde la articulación de las funciones sustantivas",
+      speaker: "Director Vinculación IES (2), Beneficiarios de Proyectos (2). Moderadora: presidenta de RENSEG",
+    },
+    {
+      time: "12:30 – 14:00",
       activity: "Almuerzo",
-      theme: "",
-      speaker: "",
+      theme: "-",
+      speaker: "DIRECTORIO REUVIC / rectores y conferencistas",
     },
     {
-      time: "13:00 – 14:45",
+      time: "14:00 – 15:45",
       activity: "Presentación de ponencias",
-      theme: "Impacto social e innovación",
-      speaker: "Ponentes seleccionados",
+      theme: "Resultados de impacto de proyectos de transferencia de conocimiento y vinculación",
+      speaker: "Pitch – 8 Ponentes",
     },
     {
-      time: "14:45 – 16:00",
-      activity: "Cierre del evento",
-      theme: "",
-      speaker: "Autoridades",
+      time: "15:45 – 16:00",
+      activity: "Cierre",
+      theme: "Palabras de Cierre EPN – Conclusiones generales",
+      speaker: "Vicerrectorado de Investigación, Innovación y Vinculación / DIV",
+    },
+    {
+      time: "16:00 – 16:20",
+      activity: "Cierre",
+      theme: "Evento artístico",
+      speaker: "-",
     },
   ];
 
   return (
     <>
-
-      {/* Bloque 2: Objetivo */}
-      <section className="py-16 md:py-[120px]">
-        <div className="container">
-          <div className="mx-auto max-w-[800px]">
-            <h2 className="mb-6 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-              Objetivo del congreso
-            </h2>
-            <p className="text-center text-lg leading-relaxed text-body-color md:text-xl lg:text-2xl">
-              Generar espacios de diálogo, intercambio académico y colaboración para fortalecer 
-              la vinculación con la sociedad, desarrollar talento humano e impulsar la 
-              internacionalización y la transferencia tecnológica.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Bloque 3: Público objetivo */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
-        <div className="container">
-          <SectionTitle
-            title="¿A quién está dirigido?"
-            paragraph=""
-            center
-          />
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
-            {[
-              { label: "Docentes y gestores de vinculación", icon: "docentes.png" },
-              { label: "Investigadores y gestores de transferencia", icon: "investigadores.png" },
-              { label: "Estudiantes", icon: "estudiantes.png" },
-              { label: "Empresas e instituciones públicas", icon: "empresas.png" },
-              { label: "Universidades y actores sociales", icon: "universidades.png" },
-            ].map((target, index) => (
-              <div key={index} className="text-center">
-                <div className="mb-4 flex items-center justify-center">
-                  <div className="rounded-full bg-primary p-8 w-56 h-56 flex items-center justify-center">
-                    <img src={`/images/brands/${target.icon}`} alt={target.label} className="h-40 w-40 object-contain" />
-                  </div>
-                </div>
-                <p className="font-semibold text-black text-lg md:text-xl lg:text-2xl">
-                  {target.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Bloque 4: Ejes temáticos */}
-      <section className="py-16 md:py-[120px]">
-        <div className="container">
-          <SectionTitle
-            title="Ejes temáticos"
-            paragraph="Temas centrales del congreso"
-            center
-          />
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2">
-            {/* Eje 1 */}
-            <div className="w-full">
-              <div className="wow fadeInUp" data-wow-delay=".15s">
-                <div className="bg-primary/10 text-primary mb-10 flex h-[140px] w-[140px] items-center justify-center rounded-full mx-auto">
-                  <Image
-                    src="/images/brands/eje1.png"
-                    alt="Innovación y Transferencia Tecnológica"
-                    width={120}
-                    height={120}
-                    className="w-auto h-auto"
-                  />
-                </div>
-                <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl text-center">
-                  Innovación, Transferencia Tecnológica y Desarrollo
-                </h3>
-                <p className="text-body-color text-lg leading-relaxed font-medium text-center md:text-xl lg:text-2xl">
-                  Vinculación, valorización del conocimiento y alianzas universidad–empresa–Estado.
-                </p>
-              </div>
-            </div>
-            {/* Eje 2 */}
-            <div className="w-full">
-              <div className="wow fadeInUp" data-wow-delay=".15s">
-                <div className="bg-primary/10 text-primary mb-10 flex h-[140px] w-[140px] items-center justify-center rounded-full mx-auto">
-                  <Image
-                    src="/images/brands/eje2.png"
-                    alt="Innovación Social e Impacto"
-                    width={120}
-                    height={120}
-                    className="w-auto h-auto"
-                  />
-                </div>
-                <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl text-center">
-                  Innovación Social e Impacto en la Sociedad
-                </h3>
-                <p className="text-body-color text-lg leading-relaxed font-medium text-center md:text-xl lg:text-2xl">
-                  Transformación social, proyectos participativos y desarrollo sostenible.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Bloque 7: Feria */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
-        <div className="container">
-          <div className="mx-auto max-w-[800px] text-center">
-            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-              Feria de proyectos y servicios
-            </h2>
-            <p className="mb-4 text-lg font-semibold text-primary">
-              Espacio para visibilizar proyectos de vinculación y capacidades institucionales
-            </p>
-            <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
-              La feria contempla stands para proyectos de vinculación y para laboratorios o 
-              servicios especializados, como un espacio de networking, difusión e interacción 
-              entre instituciones y actores del entorno.
-            </p>
-            <div className="flex items-center justify-center min-h-32">
-              <a
-                href="/participa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
-              >
-                Postula a la feria
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Tabla de Agenda Detallada */}
       <section 
         id="agenda-congreso"
@@ -279,7 +163,7 @@ const CongresosAgendaPage = () => {
           </div>
 
           {/* Table */}
-          <div className="overflow-x-auto rounded-lg border border-gray-200">
+          <div className="overflow-x-auto rounded-lg border border-gray-200 bg-white">
             <table className="w-full">
               <thead>
                 <tr className="border-b border-gray-200 bg-gray-50">
@@ -291,6 +175,9 @@ const CongresosAgendaPage = () => {
                   </th>
                   <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
                     Tema
+                  </th>
+                  <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
+                    Ponente / Responsable
                   </th>
                 </tr>
               </thead>
@@ -312,6 +199,9 @@ const CongresosAgendaPage = () => {
                       <td className="px-4 py-4 text-sm text-gray-600 md:px-6">
                         {activity.theme}
                       </td>
+                      <td className="px-4 py-4 text-sm text-gray-600 md:px-6">
+                        {activity.speaker}
+                      </td>
                     </tr>
                   )
                 )}
@@ -330,7 +220,35 @@ const CongresosAgendaPage = () => {
           </div>
         </div>
       </section>
-      
+
+      {/* Bloque 7: Feria */}
+      <section className="bg-gray-light py-16 md:py-[120px]">
+        <div className="container">
+          <div className="mx-auto max-w-[800px] text-center">
+            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
+              Feria de proyectos y servicios
+            </h2>
+            <p className="mb-4 text-lg font-semibold text-primary">
+              Espacio para visibilizar proyectos de vinculación y capacidades institucionales
+            </p>
+            <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
+              La feria contempla stands para proyectos de vinculación y para laboratorios o 
+              servicios especializados, como un espacio de networking, difusión e interacción 
+              entre instituciones y actores del entorno.
+            </p>
+            <div className="flex items-center justify-center min-h-32">
+              <a
+                href="https://forms.cloud.microsoft/r/CF7stCeNnM"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+              >
+                Postula a la feria
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
