@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 bg-slate-900 pt-16 md:pt-20 lg:pt-24">
+    <footer className="relative z-10 bg-[#021D58] pt-16 md:pt-20 lg:pt-24">
       <div className="container">
         {/* Main Grid - 3 Columns */}
         <div className="-mx-4 flex flex-wrap mb-12">
@@ -32,14 +32,14 @@ const Footer = () => {
           {/* Column 2: Secciones Principales */}
           <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0 mt-8 lg:mt-0">
             <div>
-              <h2 className="mb-8 text-lg font-bold text-[#00A7B5]">
+              <h2 className="mb-8 text-lg font-bold text-primary">
                 Secciones Principales
               </h2>
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="/participa#inscripcion"
-                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300"
+                    href="/inscribete#inscripcion"
+                    className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Inscríbete
                   </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/about#sobre-congreso"
-                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300"
+                    className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Sobre el Congreso
                   </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/agenda#agenda-congreso"
-                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300"
+                    className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Agenda
                   </Link>
@@ -63,15 +63,15 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/panelistas#ponentes-panelistas"
-                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300"
+                    className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Ponentes y Panelistas
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/participa#feria"
-                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300"
+                    href="/inscribete#feria"
+                    className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Feria y Networking
                   </Link>
@@ -83,14 +83,14 @@ const Footer = () => {
           {/* Column 3: Contacto */}
           <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0 mt-8 lg:mt-0">
             <div>
-              <h2 className="mb-8 text-lg font-bold text-[#00A7B5]">
+              <h2 className="mb-8 text-lg font-bold text-primary">
                 Contacto
               </h2>
               <ul className="space-y-4">
                 <li>
                   <p className="text-sm text-gray-400 mb-1">Correo Electrónico</p>
                   <a
-                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300"
+                    className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     direccion.vinculacion@epn.edu.ec
                   </a>
@@ -98,7 +98,7 @@ const Footer = () => {
                 <li>
                   <p className="text-sm text-gray-400 mb-1">Teléfono</p>
                   <a
-                    className="text-base text-gray-300 hover:text-[#00B5E2] duration-300"
+                    className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     xxx xxxx
                   </a>
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[#00A7B5] to-transparent mb-12"></div>
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary to-transparent mb-12"></div>
 
         {/* Bottom Bar - Copyright Only */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">

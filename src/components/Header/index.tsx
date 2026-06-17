@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       <header
-        className="header z-40 flex w-full h-[95px] items-center bg-white shadow-one"
+        className="header z-40 flex w-full h-[95px] items-center bg-[#021D58] shadow-one"
       >
         <div className="container h-full">
           <div className="relative -mx-4 flex h-full items-center justify-between">
@@ -39,7 +39,7 @@ const Header = () => {
                 className="header-logo block w-full"
               >
                 <Image
-                  src="/images/logo/logo_conexion.png"
+                  src="/images/logo/Logo blanco.png"
                   alt="Conexión 2026"
                   width={180}
                   height={45}
@@ -56,17 +56,17 @@ const Header = () => {
                   className="ring-primary absolute top-1/2 right-4 block translate-y-[-50%] rounded-lg px-3 py-[6px] focus:ring-2 lg:hidden"
                 >
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                       navbarOpen ? "top-[7px] rotate-45" : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                       navbarOpen ? "opacity-0" : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                       navbarOpen ? "top-[-8px] -rotate-45" : " "
                     }`}
                   />
@@ -88,7 +88,7 @@ const Header = () => {
                             className={`flex items-center py-2 text-2xl lg:mr-0 lg:inline-flex lg:items-center lg:px-0 lg:h-full ${
                               usePathName === menuItem.path
                                 ? "text-primary"
-                                : "text-dark hover:text-primary"
+                                : "text-white hover:text-primary"
                             }`}
                           >
                             {menuItem.title}
@@ -97,7 +97,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-2xl lg:mr-0 lg:inline-flex lg:items-center lg:px-0 lg:h-full"
+                              className="text-white group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-2xl lg:mr-0 lg:inline-flex lg:items-center lg:px-0 lg:h-full"
                             >
                               {menuItem.title}
                               <span className="pl-3">

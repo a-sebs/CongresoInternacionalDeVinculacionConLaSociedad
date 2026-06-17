@@ -38,7 +38,7 @@ const FairAndNetworking = () => {
 
               <div className="flex items-center justify-center min-h-45">
                 <a
-                  href="/participa#feria"
+                  href="/inscribete#feria"
                   className="rounded-xs bg-primary px-8 sm:px-20 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
                 >
                   Ver más

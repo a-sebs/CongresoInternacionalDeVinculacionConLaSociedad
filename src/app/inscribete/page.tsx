@@ -15,28 +15,8 @@ const ParticipaPage = () => {
 
   return (
     <>
-      {/* Bloque 1: Introducción */}
-      <section 
-        className="py-16 md:py-[120px]"
-      >
-        <div className="container">
-          <div className="mx-auto mb-12 max-w-[800px] text-center">
-            <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-              Participa en Conexión 2026
-            </h1>
-            <p className="mb-4 text-lg text-body-color md:text-xl lg:text-2xl">
-              Inscripción, postulación de ponencias, feria y pago en un solo lugar.
-            </p>
-            <p className="text-lg text-body-color md:text-xl lg:text-2xl">
-              Aquí encontrarás los accesos para registrarte como asistente, postular una ponencia, 
-              aplicar a la feria y realizar tu pago en línea.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Bloque 2: Inscripción general */}
-      <section 
+      {/* Bloque 1: Inscripción general */}
+      <section
         id="inscripcion"
         className="bg-gray-light py-16 md:py-[120px]"
       >
@@ -50,14 +30,14 @@ const ParticipaPage = () => {
                 Registro para asistentes y participantes del evento
               </p>
               <p className="text-lg text-body-color md:text-xl lg:text-2xl">
-                Completa tu registro para participar en las actividades académicas, 
+                Completa tu registro para participar en las actividades académicas,
                 la agenda del congreso y los espacios de articulación.
               </p>
             </div>
             <div className="flex justify-center gap-4">
               <Link
                 href="#"
-                className="rounded-xs bg-primary px-6 py-3 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Inscríbete al congreso
               </Link>
@@ -77,12 +57,12 @@ const ParticipaPage = () => {
               Accede a tarifas, categorías e instrucciones de pago
             </p>
             <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
-              Esta sección permitirá realizar el pago en línea y validar la participación en el 
+              Esta sección permitirá realizar el pago en línea y validar la participación en el
               congreso, una vez se definan oficialmente las tarifas.
             </p>
             <div className="flex items-center justify-center gap-6 min-h-32 flex-wrap">
               <a
-                href="/participa"
+                href="/inscribete"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
@@ -90,7 +70,7 @@ const ParticipaPage = () => {
                 Realiza tu pago
               </a>
               <a
-                href="/participa"
+                href="/inscribete"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xs border-2 border-primary bg-white px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 whitespace-nowrap text-center"
@@ -102,9 +82,9 @@ const ParticipaPage = () => {
         </div>
       </section>
       {/* Bloque 5: Postulación a la feria */}
-      <section 
+      <section
         id="feria"
-        className="bg-gray-light py-16 md:py-[120px]" 
+        className="bg-gray-light py-16 md:py-[120px]"
       >
         <div className="container">
           <div className="mx-auto max-w-[700px]">
@@ -116,7 +96,7 @@ const ParticipaPage = () => {
                 Proyectos de vinculación, laboratorios y servicios especializados
               </p>
               <p className="text-lg text-body-color mb-8 md:text-xl lg:text-2xl">
-                Espacio para iniciativas institucionales que busquen visibilizar capacidades, 
+                Espacio para iniciativas institucionales que busquen visibilizar capacidades,
                 resultados y oportunidades de articulación.
               </p>
             </div>
@@ -126,7 +106,7 @@ const ParticipaPage = () => {
                 href="https://forms.cloud.microsoft/r/CF7stCeNnM"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-32 py-8 text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 md:text-xl lg:text-2xl"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Postula a la Feria
               </a>
@@ -165,9 +145,9 @@ const ParticipaPage = () => {
       </section>
 
       {/* Bloque 7: Contacto */}
-      <section 
+      <section
         id="contacto"
-        className="bg-gray-light py-16 md:py-[120px]" 
+        className="bg-gray-light py-16 md:py-[120px]"
       >
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
@@ -177,7 +157,7 @@ const ParticipaPage = () => {
             <p className="mb-8 text-lg font-semibold text-primary">
               Consultas sobre inscripciones, ponencias, feria, pagos y auspicios
             </p>
-            
+
             {copied && (
               <div className="mb-6 rounded-lg bg-green-100 p-4 text-green-700">
                 Correo copiado al portapapeles

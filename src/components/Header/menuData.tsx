@@ -21,8 +21,8 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
-    title: "Participa",
-    path: "/participa",
+    title: "Inscríbete",
+    path: "/inscribete",
     newTab: false,
   },
 ];
