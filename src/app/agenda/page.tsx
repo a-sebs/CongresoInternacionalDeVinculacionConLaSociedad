@@ -129,7 +129,7 @@ const CongresosAgendaPage = () => {
   return (
     <>
       {/* Tabla de Agenda Detallada */}
-      <section 
+      <section
         id="agenda-congreso"
         className="py-16 md:py-[120px]"
       >
@@ -142,21 +142,19 @@ const CongresosAgendaPage = () => {
           <div className="mb-12 flex justify-center gap-4 flex-wrap">
             <button
               onClick={() => setActiveDay(1)}
-              className={`rounded-lg px-6 py-3 font-semibold transition-all ${
-                activeDay === 1
+              className={`rounded-lg px-6 py-3 font-semibold transition-all ${activeDay === 1
                   ? "bg-primary text-white shadow-lg"
                   : "border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
-              }`}
+                }`}
             >
               28 de Octubre
             </button>
             <button
               onClick={() => setActiveDay(2)}
-              className={`rounded-lg px-6 py-3 font-semibold transition-all ${
-                activeDay === 2
+              className={`rounded-lg px-6 py-3 font-semibold transition-all ${activeDay === 2
                   ? "bg-primary text-white shadow-lg"
                   : "border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
-              }`}
+                }`}
             >
               29 de Octubre
             </button>
@@ -183,9 +181,8 @@ const CongresosAgendaPage = () => {
                   (activity, index) => (
                     <tr
                       key={index}
-                      className={`border-b border-gray-200 transition-colors hover:bg-gray-50 ${
-                        index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                      }`}
+                      className={`border-b border-gray-200 transition-colors hover:bg-gray-50 ${index % 2 === 0 ? "bg-white" : "bg-gray-50"
+                        }`}
                     >
                       <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 md:px-6">
                         {activity.time}
@@ -202,16 +199,6 @@ const CongresosAgendaPage = () => {
               </tbody>
             </table>
           </div>
-          <div className="flex flex-col items-center justify-center gap-100 sm:flex-row sm:gap-8 min-h-[250px]">
-            <a
-              href="https://docs.google.com/forms/..."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
-            >
-              Registrate Ahora
-            </a>
-          </div>
         </div>
       </section>
 
@@ -226,8 +213,8 @@ const CongresosAgendaPage = () => {
               Espacio para visibilizar proyectos de vinculación y capacidades institucionales
             </p>
             <p className="mb-8 text-sm text-body-color md:text-base lg:text-lg text-justify">
-              La feria contempla stands para proyectos de vinculación y para laboratorios o 
-              servicios especializados, como un espacio de networking, difusión e interacción 
+              La feria contempla stands para proyectos de vinculación y para laboratorios o
+              servicios especializados, como un espacio de networking, difusión e interacción
               entre instituciones y actores del entorno.
             </p>
             <div className="flex items-center justify-center min-h-32">
