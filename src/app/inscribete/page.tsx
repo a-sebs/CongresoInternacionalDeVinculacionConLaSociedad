@@ -26,18 +26,12 @@ const ParticipaPage = () => {
               <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
                 Inscripción al congreso
               </h2>
-              <p className="mb-4 text-sm font-semibold text-primary">
-                Registro para asistentes y participantes del evento
-              </p>
-              <p className="text-sm text-body-color md:text-base lg:text-lg text-justify">
-                Completa tu registro para participar en las actividades académicas,
-                la agenda del congreso y los espacios de articulación.
-              </p>
+
             </div>
             <div className="flex justify-center gap-4">
               <Link
                 href="#"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-bold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Inscríbete al congreso
               </Link>
@@ -53,19 +47,12 @@ const ParticipaPage = () => {
             <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
               Pago de inscripción
             </h2>
-            <p className="mb-4 text-sm font-semibold text-primary">
-              Accede a tarifas, categorías e instrucciones de pago
-            </p>
-            <p className="mb-8 text-sm text-body-color md:text-base lg:text-lg text-justify">
-              Esta sección permitirá realizar el pago en línea y validar la participación en el
-              congreso, una vez se definan oficialmente las tarifas.
-            </p>
             <div className="flex items-center justify-center gap-6 min-h-32 flex-wrap">
               <a
                 href="/inscribete"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-bold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Realiza tu pago
               </a>
@@ -73,7 +60,7 @@ const ParticipaPage = () => {
                 href="/inscribete"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs border-2 border-primary bg-white px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 whitespace-nowrap text-center"
+                className="rounded-xs border-2 border-primary bg-white px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-bold text-primary duration-300 ease-in-out hover:bg-primary/10 whitespace-nowrap text-center"
               >
                 Ver tarifas
               </a>
@@ -81,40 +68,6 @@ const ParticipaPage = () => {
           </div>
         </div>
       </section>
-      {/* Bloque 3: Postulación a la feria */}
-      <section
-        id="feria"
-        className="py-5 md:py-[36px]"
-      >
-        <div className="container">
-          <div className="mx-auto max-w-[700px]">
-            <div className="mb-8 text-center">
-              <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
-                Postulación a la feria
-              </h2>
-              <p className="mb-4 text-sm font-semibold text-primary">
-                Proyectos de vinculación, laboratorios y servicios especializados
-              </p>
-              <p className="text-sm text-body-color mb-8 md:text-base lg:text-lg text-justify">
-                Espacio para iniciativas institucionales que busquen visibilizar capacidades,
-                resultados y oportunidades de articulación.
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center justify-center gap-6">
-              <a
-                href="https://forms.cloud.microsoft/r/CF7stCeNnM"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
-              >
-                Postula a la Feria
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
 
       {/* Bloque 5: Contacto */}
