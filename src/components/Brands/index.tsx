@@ -7,7 +7,7 @@ const Brands = () => {
   const supportedBrands = brandsData.filter((b) => b.category === "supported");
 
   return (
-    <section className="py-16">
+    <section className="py-5">
       <div className="container">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
@@ -18,37 +18,39 @@ const Brands = () => {
           </p>
         </div>
 
-        {/* Fila 1: Organizado por */}
-        <div className="mb-12">
-          <div className="mb-6 text-center">
-            <h3 className="text-lg font-semibold text-black md:text-xl">
-              Organizado por
-            </h3>
-          </div>
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="flex flex-wrap items-center justify-center text-center rounded-xs px-8 py-8 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
-                {organizedBrands.map((brand) => (
-                  <SingleBrand key={brand.id} brand={brand} />
-                ))}
+        <div className="grid grid-cols-2 gap-4 md:gap-8">
+          {/* Columna 1: Organizado por */}
+          <div>
+            <div className="mb-6 text-center">
+              <h3 className="text-lg font-semibold text-black md:text-xl">
+                Organizado por
+              </h3>
+            </div>
+            <div className="-mx-4 flex flex-wrap">
+              <div className="w-full px-4">
+                <div className="flex flex-wrap items-center justify-center text-center rounded-xs px-2 py-4 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
+                  {organizedBrands.map((brand) => (
+                    <SingleBrand key={brand.id} brand={brand} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Fila 2: Con el apoyo de */}
-        <div>
-          <div className="mb-6 text-center">
-            <h3 className="text-lg font-semibold text-black md:text-xl">
-              Con el apoyo de
-            </h3>
-          </div>
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="flex flex-wrap items-center justify-center text-center rounded-xs px-8 py-8 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
-                {supportedBrands.map((brand) => (
-                  <SingleBrand key={brand.id} brand={brand} />
-                ))}
+          {/* Columna 2: Con el apoyo de */}
+          <div>
+            <div className="mb-6 text-center">
+              <h3 className="text-lg font-semibold text-black md:text-xl">
+                Con el apoyo de
+              </h3>
+            </div>
+            <div className="-mx-4 flex flex-wrap">
+              <div className="w-full px-4">
+                <div className="flex flex-wrap items-center justify-center text-center rounded-xs px-2 py-4 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
+                  {supportedBrands.map((brand) => (
+                    <SingleBrand key={brand.id} brand={brand} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function Home() {
       <AboutSectionOne />
 
       {/* Bloque 3: Público objetivo (Movido de Congreso y Agenda) */}
-      <section className="py-16 md:py-[120px]">
+      <section className="py-5 md:py-[36px]">
         <div className="container">
           <SectionTitle
             title="¿A quién está dirigido?"

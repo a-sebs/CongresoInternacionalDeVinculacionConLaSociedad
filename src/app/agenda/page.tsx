@@ -131,7 +131,7 @@ const CongresosAgendaPage = () => {
       {/* Tabla de Agenda Detallada */}
       <section
         id="agenda-congreso"
-        className="py-16 md:py-[120px]"
+        className="py-[26px] md:py-[48px]"
       >
         <div className="container">
           <h2 className="mb-8 text-center text-2xl font-bold text-black sm:text-3xl md:text-4xl">
@@ -143,8 +143,8 @@ const CongresosAgendaPage = () => {
             <button
               onClick={() => setActiveDay(1)}
               className={`rounded-lg px-6 py-3 font-semibold transition-all ${activeDay === 1
-                  ? "bg-primary text-white shadow-lg"
-                  : "border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
+                ? "bg-primary text-white shadow-lg"
+                : "border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
                 }`}
             >
               28 de Octubre
@@ -152,8 +152,8 @@ const CongresosAgendaPage = () => {
             <button
               onClick={() => setActiveDay(2)}
               className={`rounded-lg px-6 py-3 font-semibold transition-all ${activeDay === 2
-                  ? "bg-primary text-white shadow-lg"
-                  : "border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
+                ? "bg-primary text-white shadow-lg"
+                : "border-2 border-primary bg-transparent text-primary hover:bg-primary/10"
                 }`}
             >
               29 de Octubre
@@ -203,18 +203,18 @@ const CongresosAgendaPage = () => {
       </section>
 
       {/* Bloque 7: Feria */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
+      <section className="bg-gray-light py-5 md:py-[36px]">
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
             <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
               Feria de proyectos y servicios
             </h2>
             <p className="mb-4 text-sm font-semibold text-primary">
-              Espacio para visibilizar proyectos de vinculación y capacidades institucionales
+
             </p>
             <p className="mb-8 text-sm text-body-color md:text-base lg:text-lg text-justify">
               La feria contempla stands para proyectos de vinculación y para laboratorios o
-              servicios especializados, como un espacio de networking, difusión e interacción
+              centros de servicios especializados, como un espacio de networking, difusión e interacción
               entre instituciones y actores del entorno.
             </p>
             <div className="flex items-center justify-center min-h-32">

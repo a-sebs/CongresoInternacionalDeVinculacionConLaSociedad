@@ -3,7 +3,7 @@ import SectionTitle from "../Common/SectionTitle";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="bg-gray-light py-16 md:py-20 lg:py-28">
+    <section className="bg-gray-light py-5 md:py-6 lg:py-[34px]">
       <div className="container">
         <SectionTitle
           title="Ejes Temáticos del Congreso"
@@ -11,7 +11,7 @@ const AboutSectionTwo = () => {
           center
         />
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-2 gap-x-4 md:gap-x-8 gap-y-14">
           {/* Eje 1 */}
           <div className="w-full">
             <div className="wow fadeInUp" data-wow-delay=".15s">

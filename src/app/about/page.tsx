@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-gray-light py-12 md:py-16 lg:py-20">
+      <div className="bg-gray-light py-5 md:py-[26px] lg:py-8">
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
             <h1 className="mb-4 text-2xl font-bold text-black sm:text-3xl md:text-4xl">

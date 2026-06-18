@@ -5,7 +5,7 @@ const FairAndNetworking = () => {
   return (
     <section
       id="fair"
-      className="bg-gray-light py-16 md:py-20 lg:py-28"
+      className="bg-gray-light py-5 md:py-6 lg:py-[34px]"
     >
       <div className="container">
         <SectionTitle

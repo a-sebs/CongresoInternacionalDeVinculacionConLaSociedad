@@ -67,7 +67,7 @@ export default function PanelistasPage() {
 
       <section
         id="ponentes-panelistas"
-        className="py-16 md:py-20 lg:py-28"
+        className="py-[26px] md:py-8 lg:py-11"
       >
         <div className="container">
           <div className="w-full text-center">

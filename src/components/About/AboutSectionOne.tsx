@@ -3,7 +3,7 @@ const AboutSectionOne = () => {
     <>
       <section
         id="about"
-        className="py-16 md:py-[120px]"
+        className="py-[26px] md:py-[48px]"
       >
         <div className="container relative z-10">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
