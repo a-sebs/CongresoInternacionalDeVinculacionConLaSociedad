@@ -9,7 +9,7 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "Congreso y Agenda",
+    title: "Agenda",
     path: "/agenda",
     newTab: false,
   },

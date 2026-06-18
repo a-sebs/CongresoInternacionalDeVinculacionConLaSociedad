@@ -108,18 +108,18 @@ export default function PanelistasPage() {
                   </div>
 
                   {/* Nombre */}
-                  <h3 className="mb-2 text-2xl font-bold text-black md:text-3xl">
+                  <h3 className="mb-2 text-lg font-bold text-black md:text-xl">
                     {panelista.nombre}
                   </h3>
 
                   {/* Descripción/Cargo */}
-                  <p className="mb-4 text-lg text-body-color md:text-xl">
+                  <p className="mb-4 text-sm text-body-color md:text-base">
                     {panelista.descripcion}
                   </p>
 
                   {/* Tema de Ponencia */}
                   <div className="mb-4">
-                    <div className="inline-block rounded-full bg-primary/20 px-4 py-2 text-base font-semibold text-primary md:text-lg">
+                    <div className="inline-block rounded-full bg-primary/20 px-4 py-2 text-sm font-semibold text-primary md:text-base">
                       {panelista.tema}
                     </div>
                   </div>

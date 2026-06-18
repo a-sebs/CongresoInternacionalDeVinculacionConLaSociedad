@@ -8,10 +8,10 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <div className="bg-primary/10 text-primary mb-10 flex h-[140px] w-[140px] items-center justify-center rounded-full mx-auto">
           {icon}
         </div>
-        <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl">
+        <h3 className="mb-5 text-lg font-bold text-black sm:text-xl lg:text-lg xl:text-xl text-center">
           {title}
         </h3>
-        <p className="text-body-color pr-[10px] text-lg leading-relaxed font-medium md:text-xl lg:text-2xl">
+        <p className="text-body-color pr-[10px] text-sm leading-relaxed font-medium md:text-base lg:text-lg text-justify">
           {paragraph}
         </p>
       </div>

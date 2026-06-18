@@ -23,13 +23,13 @@ const ParticipaPage = () => {
         <div className="container">
           <div className="mx-auto max-w-[700px]">
             <div className="mb-8 text-center">
-              <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
+              <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
                 Inscripción al congreso
               </h2>
-              <p className="mb-4 text-lg font-semibold text-primary">
+              <p className="mb-4 text-sm font-semibold text-primary">
                 Registro para asistentes y participantes del evento
               </p>
-              <p className="text-lg text-body-color md:text-xl lg:text-2xl">
+              <p className="text-sm text-body-color md:text-base lg:text-lg text-justify">
                 Completa tu registro para participar en las actividades académicas,
                 la agenda del congreso y los espacios de articulación.
               </p>
@@ -37,7 +37,7 @@ const ParticipaPage = () => {
             <div className="flex justify-center gap-4">
               <Link
                 href="#"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Inscríbete al congreso
               </Link>
@@ -50,13 +50,13 @@ const ParticipaPage = () => {
       <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
+            <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
               Pago de inscripción
             </h2>
-            <p className="mb-4 text-lg font-semibold text-primary">
+            <p className="mb-4 text-sm font-semibold text-primary">
               Accede a tarifas, categorías e instrucciones de pago
             </p>
-            <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
+            <p className="mb-8 text-sm text-body-color md:text-base lg:text-lg text-justify">
               Esta sección permitirá realizar el pago en línea y validar la participación en el
               congreso, una vez se definan oficialmente las tarifas.
             </p>
@@ -65,7 +65,7 @@ const ParticipaPage = () => {
                 href="/inscribete"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Realiza tu pago
               </a>
@@ -73,7 +73,7 @@ const ParticipaPage = () => {
                 href="/inscribete"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs border-2 border-primary bg-white px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 whitespace-nowrap text-center"
+                className="rounded-xs border-2 border-primary bg-white px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 whitespace-nowrap text-center"
               >
                 Ver tarifas
               </a>
@@ -89,13 +89,13 @@ const ParticipaPage = () => {
         <div className="container">
           <div className="mx-auto max-w-[700px]">
             <div className="mb-8 text-center">
-              <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
+              <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
                 Postulación a la feria
               </h2>
-              <p className="mb-4 text-lg font-semibold text-primary">
+              <p className="mb-4 text-sm font-semibold text-primary">
                 Proyectos de vinculación, laboratorios y servicios especializados
               </p>
-              <p className="text-lg text-body-color mb-8 md:text-xl lg:text-2xl">
+              <p className="text-sm text-body-color mb-8 md:text-base lg:text-lg text-justify">
                 Espacio para iniciativas institucionales que busquen visibilizar capacidades,
                 resultados y oportunidades de articulación.
               </p>
@@ -106,7 +106,7 @@ const ParticipaPage = () => {
                 href="https://forms.cloud.microsoft/r/CF7stCeNnM"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Postula a la Feria
               </a>
@@ -134,10 +134,10 @@ const ParticipaPage = () => {
                 key={index}
                 className="rounded-lg bg-white p-6 text-center"
               >
-                <p className="text-lg font-semibold text-body-color md:text-xl lg:text-2xl">
+                <p className="text-sm font-semibold text-body-color md:text-base lg:text-lg">
                   {date}
                 </p>
-                <p className="mt-2 text-lg font-bold text-primary">Por definir</p>
+                <p className="mt-2 text-sm font-bold text-primary">Por definir</p>
               </div>
             ))}
           </div>
@@ -151,10 +151,10 @@ const ParticipaPage = () => {
       >
         <div className="container">
           <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="mb-2 text-2xl font-bold text-black md:text-3xl">
+            <h2 className="mb-2 text-lg font-bold text-black md:text-xl">
               Contacto
             </h2>
-            <p className="mb-8 text-lg font-semibold text-primary">
+            <p className="mb-8 text-sm font-semibold text-primary">
               Consultas sobre inscripciones, ponencias, feria, pagos y auspicios
             </p>
 
@@ -167,12 +167,12 @@ const ParticipaPage = () => {
             <div className="space-y-8">
               {/* Sección de Correo */}
               <div>
-                <p className="mb-4 text-lg font-semibold text-black md:text-xl lg:text-2xl">
+                <p className="mb-4 text-sm font-semibold text-black md:text-base lg:text-lg">
                   Correo electrónico
                 </p>
                 <button
                   onClick={handleCopyEmail}
-                  className="group relative inline-flex items-center gap-3 rounded-lg border-2 border-primary bg-white px-6 py-4 text-lg font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 md:text-xl lg:text-2xl"
+                  className="group relative inline-flex items-center gap-3 rounded-lg border-2 border-primary bg-white px-6 py-4 text-sm font-semibold text-primary duration-300 ease-in-out hover:bg-primary/10 md:text-base lg:text-lg"
                 >
                   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -183,10 +183,10 @@ const ParticipaPage = () => {
 
               {/* Sección de Teléfono */}
               <div>
-                <p className="mb-4 text-lg font-semibold text-black md:text-xl lg:text-2xl">
+                <p className="mb-4 text-sm font-semibold text-black md:text-base lg:text-lg">
                   Teléfono
                 </p>
-                <p className="text-lg text-body-color md:text-xl lg:text-2xl">
+                <p className="text-sm text-body-color md:text-base lg:text-lg">
                   xxx xxxx
                 </p>
               </div>

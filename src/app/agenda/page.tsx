@@ -134,7 +134,7 @@ const CongresosAgendaPage = () => {
         className="py-16 md:py-[120px]"
       >
         <div className="container">
-          <h2 className="mb-8 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
+          <h2 className="mb-8 text-center text-2xl font-bold text-black sm:text-3xl md:text-4xl">
             Agenda del Evento
           </h2>
 
@@ -207,7 +207,7 @@ const CongresosAgendaPage = () => {
               href="https://docs.google.com/forms/..."
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
+              className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap w-full sm:w-auto text-center"
             >
               Registrate Ahora
             </a>
@@ -219,13 +219,13 @@ const CongresosAgendaPage = () => {
       <section className="bg-gray-light py-16 md:py-[120px]">
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
-            <h2 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
+            <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
               Feria de proyectos y servicios
             </h2>
-            <p className="mb-4 text-lg font-semibold text-primary">
+            <p className="mb-4 text-sm font-semibold text-primary">
               Espacio para visibilizar proyectos de vinculación y capacidades institucionales
             </p>
-            <p className="mb-8 text-lg text-body-color md:text-xl lg:text-2xl">
+            <p className="mb-8 text-sm text-body-color md:text-base lg:text-lg text-justify">
               La feria contempla stands para proyectos de vinculación y para laboratorios o 
               servicios especializados, como un espacio de networking, difusión e interacción 
               entre instituciones y actores del entorno.
@@ -235,7 +235,7 @@ const CongresosAgendaPage = () => {
                 href="https://forms.cloud.microsoft/r/CF7stCeNnM"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Postula a la feria
               </a>

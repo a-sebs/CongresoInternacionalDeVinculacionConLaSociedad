@@ -26,12 +26,12 @@ const FairAndNetworking = () => {
               />
             </div>
 
-            <h3 className="mb-4 text-3xl font-bold text-black md:text-4xl">
+            <h3 className="mb-4 text-xl font-bold text-black md:text-2xl">
               Feria de Proyectos
             </h3>
 
             <div className="space-y-4 text-center">
-              <p className="text-body-color">
+              <p className="text-body-color text-justify">
                 Espacio dedicado a exhibir proyectos y experiencias de vinculación
                 de las instituciones participantes.
               </p>
@@ -39,7 +39,7 @@ const FairAndNetworking = () => {
               <div className="flex items-center justify-center min-h-45">
                 <a
                   href="/inscribete#feria"
-                  className="rounded-xs bg-primary px-8 sm:px-20 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                  className="rounded-xs bg-primary px-8 sm:px-20 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
                 >
                   Ver más
                 </a>
@@ -60,19 +60,19 @@ const FairAndNetworking = () => {
               />
             </div>
 
-            <h3 className="mb-4 text-3xl font-bold text-black md:text-4xl">
+            <h3 className="mb-4 text-xl font-bold text-black md:text-2xl">
               Foros y ponencias
             </h3>
 
             <div className="space-y-4 text-center">
-              <p className="text-body-color">
+              <p className="text-body-color text-justify">
                 Espacio para la presentación de ponencias y foros de discusión
               </p>
 
               <div className="flex items-center justify-center min-h-45">
                 <a
                   href="/panelistas#ponentes-panelistas"
-                  className="rounded-xs bg-primary px-8 sm:px-20 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                  className="rounded-xs bg-primary px-8 sm:px-20 py-6 sm:py-8 text-sm sm:text-base md:text-lg font-semibold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
                 >
                   Ver más
                 </a>

@@ -22,7 +22,7 @@ const OfferList = ({
       <span className="bg-primary/10 mr-3 flex h-[18px] w-full max-w-[18px] items-center justify-center rounded-full text-white">
         {status === "active" ? checkIcon : crossIcon}
       </span>
-      <p className="text-body-color m-0 text-lg font-medium md:text-xl lg:text-2xl">{text}</p>
+      <p className="text-body-color m-0 text-sm font-medium md:text-base lg:text-lg">{text}</p>
     </div>
   );
 };

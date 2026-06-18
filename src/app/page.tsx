@@ -19,22 +19,6 @@ export default function Home() {
       <Hero />
       <AboutSectionOne />
 
-      {/* Bloque 2: Objetivo (Movido de Congreso y Agenda) */}
-      <section className="bg-gray-light py-16 md:py-[120px]">
-        <div className="container">
-          <div className="mx-auto max-w-[800px]">
-            <h2 className="mb-6 text-center text-4xl font-bold text-black sm:text-5xl md:text-6xl">
-              Objetivo del congreso
-            </h2>
-            <p className="text-center text-lg leading-relaxed text-body-color md:text-xl lg:text-2xl">
-              Generar espacios de diálogo, intercambio académico y colaboración para fortalecer
-              la vinculación con la sociedad, desarrollar talento humano e impulsar la
-              internacionalización y la transferencia tecnológica.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Bloque 3: Público objetivo (Movido de Congreso y Agenda) */}
       <section className="py-16 md:py-[120px]">
         <div className="container">
@@ -57,7 +41,7 @@ export default function Home() {
                     <img src={`/images/brands/${target.icon}`} alt={target.label} className="h-40 w-40 object-contain" />
                   </div>
                 </div>
-                <p className="font-semibold text-black text-lg md:text-xl lg:text-2xl">
+                <p className="font-semibold text-black text-sm md:text-base lg:text-lg">
                   {target.label}
                 </p>
               </div>

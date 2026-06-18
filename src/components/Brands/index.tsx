@@ -10,10 +10,10 @@ const Brands = () => {
     <section className="py-16">
       <div className="container">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:text-6xl">
+          <h2 className="mb-4 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
             Organizadores y Aliados
           </h2>
-          <p className="text-body-color text-lg md:text-xl lg:text-2xl">
+          <p className="text-body-color text-sm md:text-base lg:text-lg">
             Instituciones líderes comprometidas con la vinculación y el impacto social
           </p>
         </div>
@@ -21,7 +21,7 @@ const Brands = () => {
         {/* Fila 1: Organizado por */}
         <div className="mb-12">
           <div className="mb-6 text-center">
-            <h3 className="text-2xl font-semibold text-black md:text-3xl">
+            <h3 className="text-lg font-semibold text-black md:text-xl">
               Organizado por
             </h3>
           </div>
@@ -39,7 +39,7 @@ const Brands = () => {
         {/* Fila 2: Con el apoyo de */}
         <div>
           <div className="mb-6 text-center">
-            <h3 className="text-2xl font-semibold text-black md:text-3xl">
+            <h3 className="text-lg font-semibold text-black md:text-xl">
               Con el apoyo de
             </h3>
           </div>
