@@ -176,9 +176,6 @@ const CongresosAgendaPage = () => {
                   <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
                     Tema
                   </th>
-                  <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
-                    Ponente / Responsable
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -198,9 +195,6 @@ const CongresosAgendaPage = () => {
                       </td>
                       <td className="px-4 py-4 text-sm text-gray-600 md:px-6">
                         {activity.theme}
-                      </td>
-                      <td className="px-4 py-4 text-sm text-gray-600 md:px-6">
-                        {activity.speaker}
                       </td>
                     </tr>
                   )
