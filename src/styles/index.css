@@ -37,7 +37,7 @@
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
   --color-gray-950: #030712;
-  --color-gray-light: #f0f2f9;
+  --color-gray-light: transparent;
 
   --shadow-sign-up: 0px 5px 10px rgba(4, 10, 34, 0.2);
   --shadow-one: 0px 2px 3px rgba(7, 7, 77, 0.05);
@@ -124,6 +124,11 @@
 
   body {
     font-family: "Inter", sans-serif;
+    background-image: url('/images/hero/Sin fondo 2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   section#home {

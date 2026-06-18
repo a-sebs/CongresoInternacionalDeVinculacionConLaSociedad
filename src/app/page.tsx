@@ -27,7 +27,7 @@ export default function Home() {
             paragraph=""
             center
           />
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+          <div className="flex flex-wrap justify-center gap-x-2 gap-y-6 xs:gap-x-4 md:gap-8 lg:grid lg:grid-cols-5 lg:gap-8">
             {[
               { label: "Docentes y gestores de vinculación", icon: "docentes.png" },
               { label: "Investigadores y gestores de transferencia", icon: "investigadores.png" },
@@ -35,13 +35,13 @@ export default function Home() {
               { label: "Empresas e instituciones públicas", icon: "empresas.png" },
               { label: "Universidades y actores sociales", icon: "universidades.png" },
             ].map((target, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center flex flex-col items-center w-[31%] xs:w-[29%] md:w-[45%] lg:w-auto">
                 <div className="mb-4 flex items-center justify-center">
-                  <div className="rounded-full bg-primary p-8 w-56 h-56 flex items-center justify-center">
-                    <img src={`/images/brands/${target.icon}`} alt={target.label} className="h-40 w-40 object-contain" />
+                  <div className="rounded-full bg-primary flex items-center justify-center w-[100px] h-[100px] xs:w-[120px] xs:h-[120px] md:w-36 md:h-36 lg:w-56 lg:h-56 p-3 xs:p-4 md:p-6 lg:p-8">
+                    <img src={`/images/brands/${target.icon}`} alt={target.label} className="w-[60px] h-[60px] xs:w-[70px] xs:h-[70px] md:h-24 md:w-24 lg:h-40 lg:w-40 object-contain" />
                   </div>
                 </div>
-                <p className="font-semibold text-black text-sm md:text-base lg:text-lg">
+                <p className="font-semibold text-black text-[11px] xs:text-xs md:text-sm lg:text-lg">
                   {target.label}
                 </p>
               </div>
