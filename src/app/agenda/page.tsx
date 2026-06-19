@@ -219,7 +219,7 @@ const CongresosAgendaPage = () => {
                 href="https://forms.cloud.microsoft/r/CF7stCeNnM"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-bold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                className="rounded-xs bg-primary px-8 sm:px-16 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-bold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Postula
               </a>
@@ -241,7 +241,7 @@ const CongresosAgendaPage = () => {
             <div className="flex items-center justify-center min-h-32">
               <a
                 href="#"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-bold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
+                className="rounded-xs bg-primary px-8 sm:px-16 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-bold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
               >
                 Postula
               </a>
