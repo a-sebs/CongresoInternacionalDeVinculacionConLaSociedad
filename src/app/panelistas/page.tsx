@@ -11,60 +11,57 @@ import "swiper/css/pagination";
 interface Panelista {
   id: number;
   nombre: string;
-  descripcion: string;
+  perfil: string;
+  pais: string;
   tema: string;
+  correo: string;
   imagen: string;
+  pendiente?: boolean;
 }
 
 const panelistas: Panelista[] = [
   {
     id: 1,
-    nombre: "Dr. Roberto García",
-    descripcion: "Catedrático, Universidad Nacional",
-    tema: "Innovación y Transferencia Tecnológica",
-    imagen: "/images/testimonials/auth-01.png",
+    nombre: "Juan Fernando Pacheco Duarte",
+    perfil: "Rector Parque Científico de Innovación Social",
+    pais: "Colombia",
+    tema: "Gestión del conocimiento para la generación de innovaciones sociales",
+    correo: "jpacheco@uniminuto.edu",
+    imagen: "/images/blog/anonimo.png",
   },
   {
     id: 2,
-    nombre: "Dra. María López",
-    descripcion: "Directora de Investigación, Instituto Tecnológico",
-    tema: "Transformación Digital en Educación Superior",
-    imagen: "/images/testimonials/auth-02.png",
+    nombre: "Hecto Hidalgo",
+    perfil: "CEO de innovación académica",
+    pais: "Chile",
+    tema: "Transferencia Tecnológica: Innovar desde la generación de conocimiento.",
+    correo: "hhidalgo@gmail.com",
+    imagen: "/images/blog/anonimo.png",
   },
   {
     id: 3,
-    nombre: "Ing. Carlos Rodríguez",
-    descripcion: "CEO, Empresa Innovadora",
-    tema: "Emprendimiento e Impacto Social",
-    imagen: "/images/testimonials/auth-03.png",
+    nombre: "Jairo Castañeda",
+    perfil: "Ministerio de defensa de Colombia",
+    pais: "Colombia",
+    tema: "Transferencia de conocimiento e innovación desde la educación superior",
+    correo: "JairoO.Castaneda@mindefensa.gov.co",
+    imagen: "/images/blog/anonimo.png",
   },
   {
     id: 4,
-    nombre: "Lic. Patricia Martínez",
-    descripcion: "Gestora de Vinculación, Institución Pública",
-    tema: "Articulación Público-Privada",
-    imagen: "/images/testimonials/author-01.png",
-  },
-  {
-    id: 5,
-    nombre: "Prof. David Fernández",
-    descripcion: "Especialista en Desarrollo Sostenible",
-    tema: "Innovación Social para el Desarrollo Sostenible",
-    imagen: "/images/testimonials/author-02.png",
-  },
-  {
-    id: 6,
-    nombre: "Dra. Alejandra Cruz",
-    descripcion: "Investigadora Principal, Centro de Estudios",
-    tema: "Ecosistemas de Innovación Regional",
-    imagen: "/images/testimonials/author-03.png",
+    nombre: "Pendiente",
+    perfil: "Perfil por confirmar",
+    pais: "—",
+    tema: "Tema por confirmar",
+    correo: "",
+    imagen: "/images/blog/anonimo.png",
+    pendiente: true,
   },
 ];
 
 export default function PanelistasPage() {
   return (
     <>
-
       <section
         id="ponentes-panelistas"
         className="py-[26px] md:py-8 lg:py-11"
@@ -72,7 +69,7 @@ export default function PanelistasPage() {
         <div className="container">
           <div className="w-full text-center">
             <SectionTitle
-              title="Panelistas y Ponentes"
+              title="Panelistas"
               paragraph="Un grupo de expertos nacionales e internacionales que compartirán sus conocimientos, experiencias y perspectivas en innovación, vinculación y desarrollo sostenible."
               center
             />
@@ -93,10 +90,20 @@ export default function PanelistasPage() {
           >
             {panelistas.map((panelista) => (
               <SwiperSlide key={panelista.id}>
-                <div className="group rounded-lg border border-primary/20 bg-white/5 backdrop-blur-sm p-8 text-center transition-all duration-300 hover:border-primary/50 hover:bg-white/10">
+                <div
+                  className={`group rounded-lg border p-8 text-center transition-all duration-300 ${panelista.pendiente
+                    ? "border-dashed border-body-color/30 bg-white/3 opacity-60"
+                    : "border-primary/20 bg-white/5 backdrop-blur-sm hover:border-primary/50 hover:bg-white/10"
+                    }`}
+                >
                   {/* Imagen circular */}
                   <div className="mb-6 flex justify-center">
-                    <div className="relative h-40 w-40 overflow-hidden rounded-full border-4 border-primary/30 transition-all duration-300 group-hover:border-primary">
+                    <div
+                      className={`relative h-40 w-40 overflow-hidden rounded-full border-4 transition-all duration-300 ${panelista.pendiente
+                        ? "border-body-color/20"
+                        : "border-primary/30 group-hover:border-primary"
+                        }`}
+                    >
                       <Image
                         src={panelista.imagen}
                         alt={panelista.nombre}
@@ -108,13 +115,31 @@ export default function PanelistasPage() {
                   </div>
 
                   {/* Nombre */}
-                  <h3 className="mb-2 text-lg font-bold text-black md:text-xl">
+                  <h3 className="mb-1 text-lg font-bold text-black md:text-xl">
                     {panelista.nombre}
                   </h3>
 
-                  {/* Descripción/Cargo */}
-                  <p className="mb-4 text-sm text-body-color md:text-base">
-                    {panelista.descripcion}
+                  {/* Perfil/Cargo */}
+                  <p className="mb-1 text-sm font-semibold text-primary md:text-base">
+                    {panelista.perfil}
+                  </p>
+
+                  {/* País */}
+                  <p className="mb-4 flex items-center justify-center gap-1 text-sm text-body-color">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="inline h-4 w-4 shrink-0"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                      <circle cx="12" cy="9" r="2.5" />
+                    </svg>
+                    {panelista.pais}
                   </p>
 
                   {/* Tema de Ponencia */}
@@ -124,8 +149,33 @@ export default function PanelistasPage() {
                     </div>
                   </div>
 
+                  {/* Correo */}
+                  {panelista.correo && (
+                    <a
+                      href={`mailto:${panelista.correo}`}
+                      className="inline-flex items-center gap-1 text-xs text-body-color transition-colors hover:text-primary"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-3.5 w-3.5 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                      </svg>
+                      {panelista.correo}
+                    </a>
+                  )}
+
                   {/* Línea decorativa */}
-                  <div className="mt-6 h-1 w-12 bg-gradient-to-r from-primary to-primary/50 transition-all duration-300 group-hover:w-full"></div>
+                  {!panelista.pendiente && (
+                    <div className="mt-6 h-1 w-12 bg-gradient-to-r from-primary to-primary/50 transition-all duration-300 group-hover:w-full"></div>
+                  )}
                 </div>
               </SwiperSlide>
             ))}

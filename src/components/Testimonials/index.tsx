@@ -1,36 +1,78 @@
-import { Testimonial } from "@/types/testimonial";
+import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
 
-const testimonialData: Testimonial[] = [
+interface Panelista {
+  id: number;
+  nombre: string;
+  perfil: string;
+  pais: string;
+  tema: string;
+  correo: string;
+  imagen: string;
+  pendiente?: boolean;
+}
+
+const panelistas: Panelista[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
-    star: 5,
+    nombre: "Juan Fernando Pacheco Duarte",
+    perfil: "Rector Parque Científico de Innovación Social",
+    pais: "Colombia",
+    tema: "Gestión del conocimiento para la generación de innovaciones sociales",
+    correo: "jpacheco@uniminuto.edu",
+    imagen: "/images/blog/anonimo.png",
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
-    star: 5,
+    nombre: "Hecto Hidalgo",
+    perfil: "CEO de innovación académica",
+    pais: "Chile",
+    tema: "Transferencia Tecnológica: Innovar desde la generación de conocimiento.",
+    correo: "hhidalgo@gmail.com",
+    imagen: "/images/blog/anonimo.png",
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
+    nombre: "Jairo Castañeda",
+    perfil: "Ministerio de defensa de Colombia",
+    pais: "Colombia",
+    tema: "Transferencia de conocimiento e innovación desde la educación superior",
+    correo: "JairoO.Castaneda@mindefensa.gov.co",
+    imagen: "/images/blog/anonimo.png",
   },
 ];
+
+const locationIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="inline h-4 w-4 shrink-0"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+    <circle cx="12" cy="9" r="2.5" />
+  </svg>
+);
+
+const emailIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-3.5 w-3.5 shrink-0"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect x="2" y="4" width="20" height="16" rx="2" />
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  </svg>
+);
 
 const Testimonials = () => {
   return (
@@ -38,13 +80,65 @@ const Testimonials = () => {
       <div className="container">
         <SectionTitle
           title="Ponentes y panelistas"
-          paragraph="Expertos que compartirán sus conocimientos"
+          paragraph="Expertos nacionales e internacionales que compartirán sus conocimientos y perspectivas."
           center
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {testimonialData.map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+          {panelistas.map((panelista) => (
+            <div key={panelista.id} className="group w-full">
+              <div className="shadow-two hover:shadow-one rounded-lg border border-primary/20 bg-white p-8 text-center duration-300 hover:border-primary/50">
+                {/* Imagen circular */}
+                <div className="mb-5 flex justify-center">
+                  <div className="relative h-28 w-28 overflow-hidden rounded-full border-4 border-primary/30 transition-all duration-300 group-hover:border-primary">
+                    <Image
+                      src={panelista.imagen}
+                      alt={panelista.nombre}
+                      width={112}
+                      height={112}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Nombre */}
+                <h3 className="mb-1 text-lg font-bold text-dark">
+                  {panelista.nombre}
+                </h3>
+
+                {/* Perfil */}
+                <p className="mb-1 text-sm font-semibold text-primary">
+                  {panelista.perfil}
+                </p>
+
+                {/* País */}
+                <p className="mb-3 flex items-center justify-center gap-1 text-sm text-body-color">
+                  {locationIcon}
+                  {panelista.pais}
+                </p>
+
+                {/* Tema */}
+                <div className="mb-4">
+                  <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary">
+                    {panelista.tema}
+                  </span>
+                </div>
+
+                {/* Correo */}
+                {panelista.correo && (
+                  <a
+                    href={`mailto:${panelista.correo}`}
+                    className="inline-flex items-center gap-1 text-xs text-body-color transition-colors hover:text-primary"
+                  >
+                    {emailIcon}
+                    {panelista.correo}
+                  </a>
+                )}
+
+                {/* Línea decorativa */}
+                <div className="mx-auto mt-5 h-0.5 w-10 bg-gradient-to-r from-primary to-primary/40 transition-all duration-300 group-hover:w-full" />
+              </div>
+            </div>
           ))}
         </div>
       </div>

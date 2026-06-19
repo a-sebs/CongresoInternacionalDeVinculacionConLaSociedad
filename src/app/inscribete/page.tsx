@@ -40,35 +40,6 @@ const ParticipaPage = () => {
         </div>
       </section>
 
-      {/* Bloque 2: Pago en línea */}
-      <section className="bg-gray-light py-5 md:py-[36px]">
-        <div className="container">
-          <div className="mx-auto max-w-[700px] text-center">
-            <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
-              Pago de inscripción
-            </h2>
-            <div className="flex items-center justify-center gap-6 min-h-32 flex-wrap">
-              <a
-                href="/inscribete"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xs bg-primary px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-bold text-white duration-300 ease-in-out hover:bg-primary/80 whitespace-nowrap text-center"
-              >
-                Realiza tu pago
-              </a>
-              <a
-                href="/inscribete"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xs border-2 border-primary bg-white px-8 sm:px-32 py-6 sm:py-8 text-lg sm:text-xl md:text-2xl font-bold text-primary duration-300 ease-in-out hover:bg-primary/10 whitespace-nowrap text-center"
-              >
-                Ver tarifas
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
       {/* Bloque 5: Contacto */}
       <section
