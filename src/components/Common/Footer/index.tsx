@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="max-w-[300px]">
               <Link href="/" className="mb-6 inline-block">
                 <Image
-                  src="/images/logo/logo_conexion_blanco.png"
+                  src="/images/logo/Logo blanco.png"
                   alt="Conexión 2026"
                   className="w-auto h-auto"
                   width={180}
@@ -100,7 +100,7 @@ const Footer = () => {
                   <a
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
-                    xxx xxxx
+                    (+593) 2 2976 300 extensión 1814
                   </a>
                 </li>
                 <li>
