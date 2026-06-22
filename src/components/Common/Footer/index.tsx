@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 bg-[#021D58] pt-10 md:pt-12 lg:pt-16 pb-8">
+    <footer className="relative z-10 bg-[#021D58] pt-8 md:pt-10 lg:pt-12 pb-6">
       <div className="container">
         {/* Main Grid - 3 Columns */}
-        <div className="-mx-4 flex flex-wrap mb-8">
+        <div className="-mx-4 flex flex-wrap mb-6">
           {/* Column 1: Logo & Description */}
-          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0">
+          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-8 lg:mb-0">
             <div className="max-w-[300px]">
               <Link href="/" className="mb-6 inline-block">
                 <Image
@@ -20,7 +20,7 @@ const Footer = () => {
                   height={60}
                 />
               </Link>
-              <h3 className="text-base font-semibold text-white mb-3">
+              <h3 className="text-base font-semibold text-white mb-3 text-justify">
                 Congreso Internacional de Vinculación con la Sociedad
               </h3>
               <p className="text-base leading-relaxed text-gray-300 text-justify">
@@ -30,9 +30,9 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Secciones Principales */}
-          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0 mt-8 lg:mt-0">
+          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-8 lg:mb-0 mt-6 lg:mt-0">
             <div>
-              <h2 className="mb-8 text-lg font-bold text-primary">
+              <h2 className="mb-6 text-lg font-bold text-primary">
                 Secciones Principales
               </h2>
               <ul className="space-y-3">
@@ -49,7 +49,7 @@ const Footer = () => {
                     href="/agenda"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
-                    Sobre el Congreso
+                    Congreso
                   </Link>
                 </li>
                 <li>
@@ -81,9 +81,9 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Contacto */}
-          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0 mt-8 lg:mt-0">
+          <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-8 lg:mb-0 mt-6 lg:mt-0">
             <div>
-              <h2 className="mb-8 text-lg font-bold text-primary">
+              <h2 className="mb-6 text-lg font-bold text-primary">
                 Contacto
               </h2>
               <ul className="space-y-4">
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary to-transparent mb-8"></div>
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary to-transparent mb-6"></div>
 
         {/* Bottom Bar - Copyright Only */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
