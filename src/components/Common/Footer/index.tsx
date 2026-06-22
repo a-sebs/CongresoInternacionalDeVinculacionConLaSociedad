@@ -21,7 +21,7 @@ const Footer = () => {
                 />
               </Link>
               <h3 className="text-base font-semibold text-white mb-3 text-justify">
-                Congreso Internacional de Vinculación con la Sociedad
+                IV Congreso Internacional de Vinculación con la Sociedad
               </h3>
               <p className="text-base leading-relaxed text-gray-300 text-justify">
                 Un espacio académico e institucional para fortalecer la articulación entre universidades, sector público, empresas y actores sociales, promoviendo experiencias, proyectos y buenas prácticas de vinculación con impacto.
@@ -49,7 +49,7 @@ const Footer = () => {
                     href="/agenda"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
-                    Congreso
+                    Sobre el Congreso
                   </Link>
                 </li>
                 <li>
