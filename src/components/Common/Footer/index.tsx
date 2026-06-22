@@ -1,13 +1,13 @@
-    "use client";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 bg-[#021D58] pt-16 md:pt-20 lg:pt-24">
+    <footer className="relative z-10 bg-[#021D58] pt-10 md:pt-12 lg:pt-16 pb-8">
       <div className="container">
         {/* Main Grid - 3 Columns */}
-        <div className="-mx-4 flex flex-wrap mb-12">
+        <div className="-mx-4 flex flex-wrap mb-8">
           {/* Column 1: Logo & Description */}
           <div className="w-full px-4 md:w-1/2 lg:w-4/12 mb-12 lg:mb-0">
             <div className="max-w-[300px]">
@@ -23,7 +23,7 @@ const Footer = () => {
               <h3 className="text-base font-semibold text-white mb-3">
                 Congreso Internacional de Vinculación con la Sociedad
               </h3>
-              <p className="text-base leading-relaxed text-gray-300">
+              <p className="text-base leading-relaxed text-gray-300 text-justify">
                 Un espacio académico e institucional para fortalecer la articulación entre universidades, sector público, empresas y actores sociales, promoviendo experiencias, proyectos y buenas prácticas de vinculación con impacto.
               </p>
             </div>
@@ -65,7 +65,7 @@ const Footer = () => {
                     href="/panelistas#ponentes-panelistas"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
-                    Ponentes y Panelistas
+                    Ponencias
                   </Link>
                 </li>
                 <li>
@@ -73,7 +73,7 @@ const Footer = () => {
                     href="/inscribete#feria"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
-                    Feria y Networking
+                    Feria
                   </Link>
                 </li>
               </ul>
@@ -106,7 +106,7 @@ const Footer = () => {
                 <li>
                   <p className="text-sm text-gray-400 mb-1">Ubicación</p>
                   <p className="text-base text-gray-300">
-                    Escuela Politécnica Nacional
+                    Escuela Politécnica Nacional, EARME - Auditorio 2
                   </p>
                 </li>
               </ul>
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary to-transparent mb-12"></div>
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary to-transparent mb-8"></div>
 
         {/* Bottom Bar - Copyright Only */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
@@ -124,8 +124,8 @@ const Footer = () => {
               © 2026 Congreso Internacional de Vinculación con la Sociedad – Conexión 2026. Todos los derechos reservados.
             </p>
             <p className="text-xs text-gray-400">
-              Escuela Politécnica Nacional | Universidad Libertadores | REUVIC | Red de Vinculación con la Sociedad
-            </p>.   
+              Escuela Politécnica Nacional | REUVIC | Dirección de Innovación y Vinculación
+            </p>
           </div>
         </div>
       </div>
