@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/agenda"
+                    href="/"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Sobre el Congreso
@@ -70,7 +70,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/inscribete#feria"
+                    href="/agenda#feria"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Feria

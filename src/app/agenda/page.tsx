@@ -12,7 +12,7 @@ export default function CongresosAgendaPage() {
       </section>
 
       {/* Bloque 7: Feria */}
-      <section className="bg-gray-light py-5 md:py-[36px]">
+      <section id="feria" className="bg-gray-light py-5 md:py-[36px]">
         <div className="container">
           <div className="mx-auto max-w-[800px] text-center">
             <h2 className="mb-2 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
