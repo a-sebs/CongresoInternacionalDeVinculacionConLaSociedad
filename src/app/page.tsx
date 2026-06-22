@@ -1,9 +1,10 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import Brands from "@/components/Brands";
+import AboutSectionOne from "@/components/Home/About/AboutSectionOne";
+import Brands from "@/components/Home/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
+import Features from "@/components/Home/Features";
+import Hero from "@/components/Home/Hero";
 import SectionTitle from "@/components/Common/SectionTitle";
+import { homeData } from "@/data/homeData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,13 +29,7 @@ export default function Home() {
             center
           />
           <div className="flex flex-wrap justify-center gap-x-2 gap-y-6 xs:gap-x-4 md:gap-8 lg:grid lg:grid-cols-5 lg:gap-8">
-            {[
-              { label: "Docentes y gestores de vinculación", icon: "docentes.png" },
-              { label: "Investigadores y gestores de transferencia", icon: "investigadores.png" },
-              { label: "Estudiantes", icon: "estudiantes.png" },
-              { label: "Empresas e instituciones públicas", icon: "empresas.png" },
-              { label: "Universidades y actores sociales", icon: "universidades.png" },
-            ].map((target, index) => (
+            {homeData.targetAudience.map((target, index) => (
               <div key={index} className="text-center flex flex-col items-center w-[31%] xs:w-[29%] md:w-[45%] lg:w-auto">
                 <div className="mb-4 flex items-center justify-center">
                   <div className="rounded-full bg-primary flex items-center justify-center w-[100px] h-[100px] xs:w-[120px] xs:h-[120px] md:w-36 md:h-36 lg:w-56 lg:h-56 p-3 xs:p-4 md:p-6 lg:p-8">

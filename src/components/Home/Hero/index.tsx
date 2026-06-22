@@ -13,6 +13,7 @@ const Hero = () => {
   const [startX, setStartX] = useState<number | null>(null);
   const [currentX, setCurrentX] = useState<number | null>(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [showDialog, setShowDialog] = useState(false);
 
   // Auto-play effect: se reinicia cuando currentIndex cambia o mientras se arrastra
   useEffect(() => {
@@ -53,6 +54,11 @@ const Hero = () => {
     } else if (diff < -threshold) {
       // Deslizar derecha -> Anterior
       setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    } else if (Math.abs(diff) < 5) {
+      // Es un click
+      if (images[currentIndex] === "/images/hero/Inscribete.png") {
+        setShowDialog(true);
+      }
     }
 
     setIsDragging(false);
@@ -67,7 +73,9 @@ const Hero = () => {
       <section
         id="home"
         className={`relative z-10 overflow-hidden bg-white w-full select-none touch-pan-y ${
-          isDragging ? "cursor-grabbing" : "cursor-grab"
+          isDragging 
+            ? "cursor-grabbing" 
+            : (images[currentIndex] === "/images/hero/Inscribete.png" ? "cursor-pointer" : "cursor-grab")
         }`}
         onTouchStart={(e) => handleStart(e.touches[0].clientX)}
         onTouchMove={(e) => handleMove(e.touches[0].clientX)}
@@ -140,6 +148,53 @@ const Hero = () => {
           })}
         </div>
       </section>
+
+      {/* Cuadro de Diálogo de Confirmación */}
+      {showDialog && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4 transition-opacity backdrop-blur-sm bg-white/10">
+          <div className="bg-white rounded-lg p-8 max-w-md w-full text-center shadow-2xl border border-gray-100 transform transition-transform">
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-black mb-4">
+              Registro a Feria de Proyectos
+            </h3>
+            <p className="text-body-color mb-8 text-base">
+              Estás a punto de ser redirigido al formulario oficial de registro para la feria de proyectos. ¿Deseas continuar?
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <button
+                onClick={() => setShowDialog(false)}
+                className="px-6 py-3 rounded-md border-2 border-gray-200 text-black hover:border-gray-300 hover:bg-gray-50 font-bold transition-all w-full sm:w-auto"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={() => {
+                  setShowDialog(false);
+                  window.open("https://forms.cloud.microsoft/r/CF7stCeNnM", "_blank", "noopener,noreferrer");
+                }}
+                className="px-6 py-3 rounded-md bg-primary text-white hover:bg-primary/90 hover:shadow-lg font-bold transition-all w-full sm:w-auto"
+              >
+                Ir al formulario
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
