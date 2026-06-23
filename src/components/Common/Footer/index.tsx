@@ -65,6 +65,14 @@ const Footer = () => {
                     href="/panelistas#ponentes-panelistas"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
+                    Panelistas
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/agenda"
+                    className="text-base text-gray-300 hover:text-primary duration-300"
+                  >
                     Ponencias
                   </Link>
                 </li>

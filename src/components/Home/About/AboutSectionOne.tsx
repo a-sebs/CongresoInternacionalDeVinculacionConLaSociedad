@@ -10,7 +10,7 @@ const AboutSectionOne = () => {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             {/* Column 1: ¿Por qué participar? */}
             <div className="text-center md:text-left">
-              <h2 className="mb-4 text-2xl font-bold text-black md:text-3xl lg:text-4xl text-center">
+              <h2 className="mb-4 text-2xl font-bold leading-tight! text-black sm:text-3xl md:text-4xl lg:text-5xl text-center">
                 ¿Por qué participar?
               </h2>
               <p className="mb-6 text-lg font-semibold text-primary md:text-xl text-center">
@@ -25,8 +25,8 @@ const AboutSectionOne = () => {
 
             {/* Column 2: Objetivo del congreso */}
             <div className="text-center md:text-left">
-              <h2 className="mb-4 text-2xl font-bold text-black md:text-3xl lg:text-4xl text-center">
-                Objetivo del congreso
+              <h2 className="mb-4 text-2xl font-bold leading-tight! text-black sm:text-3xl md:text-4xl lg:text-5xl text-center">
+                Objetivo
               </h2>
               <p className="mb-6 text-lg font-semibold text-primary md:text-xl text-center">
                 Colaboración, transferencia y desarrollo de talento
