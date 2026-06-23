@@ -9,7 +9,7 @@ export const day1Activities: Activity[] = [
   {
     time: "08:30 – 09:00",
     activity: "Registro e ingreso",
-    theme: "Apoyo logístico del equipo",
+    theme: "-",
     speaker: "-",
   },
   {
