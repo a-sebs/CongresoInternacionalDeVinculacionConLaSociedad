@@ -6,6 +6,11 @@ const AboutSectionOne = () => {
         className="py-[26px] md:py-[48px]"
       >
         <div className="container relative z-10">
+          <div className="mb-16 mt-8 text-center md:mb-20 md:mt-12">
+            <h2 className="text-3xl font-bold text-black md:text-4xl lg:text-5xl">
+              BIENVENIDA CONGRESO
+            </h2>
+          </div>
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             {/* Column 1: ¿Por qué participar? */}
             <div className="text-center md:text-left">
