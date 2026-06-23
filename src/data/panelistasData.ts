@@ -17,16 +17,16 @@ export const panelistas: Panelista[] = [
     pais: "Colombia",
     tema: "Gestión del conocimiento para la generación de innovaciones sociales",
     correo: "jpacheco@uniminuto.edu",
-    imagen: "/images/blog/anonimo.png",
+    imagen: "/images/blog/Juan Fernando Pacheco Duarte.png",
   },
   {
     id: 2,
-    nombre: "Hecto Hidalgo",
+    nombre: "Hector Hidalgo",
     perfil: "CEO de innovación académica",
     pais: "Chile",
     tema: "Transferencia Tecnológica: Innovar desde la generación de conocimiento.",
     correo: "hhidalgo@gmail.com",
-    imagen: "/images/blog/anonimo.png",
+    imagen: "/images/blog/Hector Hidalgo.png",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const panelistas: Panelista[] = [
     pais: "Colombia",
     tema: "Transferencia de conocimiento e innovación desde la educación superior",
     correo: "JairoO.Castaneda@mindefensa.gov.co",
-    imagen: "/images/blog/anonimo.png",
+    imagen: "/images/blog/Jairo Castañeda-modified.png",
   },
   {
     id: 4,
