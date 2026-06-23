@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router = useRouter();
   const images = [
     "/images/hero/Principal.png",
     "/images/hero/Inscribete.png",
@@ -58,6 +60,8 @@ const Hero = () => {
       // Es un click
       if (images[currentIndex] === "/images/hero/Inscribete.png") {
         setShowDialog(true);
+      } else if (images[currentIndex] === "/images/hero/Postula.png") {
+        router.push("/agenda#ponencia");
       }
     }
 
@@ -75,7 +79,7 @@ const Hero = () => {
         className={`relative z-10 overflow-hidden bg-white w-full select-none touch-pan-y ${
           isDragging 
             ? "cursor-grabbing" 
-            : (images[currentIndex] === "/images/hero/Inscribete.png" ? "cursor-pointer" : "cursor-grab")
+            : (images[currentIndex] === "/images/hero/Inscribete.png" || images[currentIndex] === "/images/hero/Postula.png" ? "cursor-pointer" : "cursor-grab")
         }`}
         onTouchStart={(e) => handleStart(e.touches[0].clientX)}
         onTouchMove={(e) => handleMove(e.touches[0].clientX)}
