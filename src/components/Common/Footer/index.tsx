@@ -70,7 +70,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/agenda"
+                    href="/agenda#ponencia"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Ponencias

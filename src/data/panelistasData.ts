@@ -4,7 +4,6 @@ export interface Panelista {
   perfil: string;
   pais: string;
   tema: string;
-  correo: string;
   imagen: string;
   pendiente?: boolean;
 }
@@ -16,7 +15,6 @@ export const panelistas: Panelista[] = [
     perfil: "Rector Parque Científico de Innovación Social",
     pais: "Colombia",
     tema: "Gestión del conocimiento para la generación de innovaciones sociales",
-    correo: "jpacheco@uniminuto.edu",
     imagen: "/images/blog/Juan Fernando Pacheco Duarte.png",
   },
   {
@@ -25,7 +23,6 @@ export const panelistas: Panelista[] = [
     perfil: "CEO de innovación académica",
     pais: "Chile",
     tema: "Transferencia Tecnológica: Innovar desde la generación de conocimiento.",
-    correo: "hhidalgo@gmail.com",
     imagen: "/images/blog/Hector Hidalgo.png",
   },
   {
@@ -34,7 +31,6 @@ export const panelistas: Panelista[] = [
     perfil: "Ministerio de defensa de Colombia",
     pais: "Colombia",
     tema: "Transferencia de conocimiento e innovación desde la educación superior",
-    correo: "JairoO.Castaneda@mindefensa.gov.co",
     imagen: "/images/blog/Jairo Castañeda-modified.png",
   },
   {
@@ -43,7 +39,6 @@ export const panelistas: Panelista[] = [
     perfil: "Perfil por confirmar",
     pais: "—",
     tema: "Tema por confirmar",
-    correo: "",
     imagen: "/images/blog/anonimo.png",
     pendiente: true,
   },

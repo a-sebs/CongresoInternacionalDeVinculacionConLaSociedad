@@ -78,27 +78,7 @@ export default function PanelistasSlider() {
                   {panelista.tema}
                 </div>
               </div>
-              {panelista.correo && (
-                <a
-                  href={`mailto:${panelista.correo}`}
-                  className="inline-flex items-center gap-1 text-xs text-body-color transition-colors hover:text-primary"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-3.5 w-3.5 shrink-0"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                  </svg>
-                  {panelista.correo}
-                </a>
-              )}
+
               {!panelista.pendiente && (
                 <div className="mt-6 h-1 w-12 bg-gradient-to-r from-primary to-primary/50 transition-all duration-300 group-hover:w-full"></div>
               )}
