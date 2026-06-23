@@ -59,8 +59,8 @@ export default function CongresosAgendaPage() {
                 Lineamientos de participación
               </button>
             </div>
-            <p className="mt-4 text-sm text-body-color md:text-base lg:text-lg text-center">Envia tu postulación a reuvic.ec@gmail.com</p>
-            <p className="mt-4 text-sm text-body-color md:text-base lg:text-lg text-center">Fecha maxima de postulación 25 de septiembre del 2026</p>
+            <p className="mt-4 text-sm text-body-color md:text-base lg:text-lg text-center">Envia tu postulación a <strong>reuvic.ec@gmail.com</strong></p>
+            <p className="mt-4 text-sm text-body-color md:text-base lg:text-lg text-center">Fecha maxima de postulación <strong>25 de septiembre del 2026</strong></p>
           </div>
         </div>
       </section>

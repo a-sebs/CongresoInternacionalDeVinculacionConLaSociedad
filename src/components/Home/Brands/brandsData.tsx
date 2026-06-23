@@ -26,7 +26,7 @@ const brandsData: Brand[] = [
     image: "/images/brands/LOGO RENSEG.png",
     imageLight: "/images/brands/LOGO RENSEG.png",
     category: "supported",
-    size: "medium",
+    size: "large",
   },
 ];
 
