@@ -2,6 +2,10 @@
 
 Esta es la página principal (landing page) para el **Congreso Internacional de Vinculación con la Sociedad**. 
 
+## Enlace público
+
+[https://congresoconexion2026.epn.edu.ec/](https://congresoconexion2026.epn.edu.ec/)
+
 Este proyecto está construido utilizando tecnologías web modernas para asegurar un alto rendimiento, accesibilidad y una excelente experiencia de usuario.
 
 ## 🚀 Tecnologías Principales
