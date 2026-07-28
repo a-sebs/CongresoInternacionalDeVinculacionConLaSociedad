@@ -54,10 +54,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/agenda#agenda-congreso"
+                    href="/informacion#agenda-congreso"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
-                    Agenda
+                    Información
                   </Link>
                 </li>
                 <li>
@@ -70,7 +70,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/agenda#ponencia"
+                    href="/informacion#ponencia"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Ponencias
@@ -78,7 +78,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/agenda#feria"
+                    href="/informacion#feria"
                     className="text-base text-gray-300 hover:text-primary duration-300"
                   >
                     Feria

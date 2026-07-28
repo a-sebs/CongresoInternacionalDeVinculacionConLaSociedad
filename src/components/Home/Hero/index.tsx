@@ -61,7 +61,7 @@ const Hero = () => {
       if (images[currentIndex] === "/images/hero/Inscribete.png") {
         setShowDialog(true);
       } else if (images[currentIndex] === "/images/hero/Postula.png") {
-        router.push("/agenda#ponencia");
+        router.push("/informacion#ponencia");
       }
     }
 

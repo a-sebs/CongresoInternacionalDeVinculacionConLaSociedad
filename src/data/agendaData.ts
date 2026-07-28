@@ -9,12 +9,12 @@ export const day1Activities: Activity[] = [
   {
     time: "08:30 – 09:00",
     activity: "Registro e ingreso",
-    theme: "-",
+    theme: "Auditorio 1",
     speaker: "-",
   },
   {
     time: "09:00 – 09:30",
-    activity: "Ceremonia de apertura (momento cultural)",
+    activity: "Ceremonia de apertura",
     theme: "Inauguración formal por parte de autoridades",
     speaker:
       "Rector EPN (Phd Traquino Sanchez), Presidenta Reuvic (Phd Ana Santos), Renseg, Caces, CES, MINEDUC",
@@ -29,7 +29,7 @@ export const day1Activities: Activity[] = [
   {
     time: "10:30 – 11:00",
     activity: "Coffee break",
-    theme: "-",
+    theme: "Auditorio 1",
     speaker: "-",
   },
   {
@@ -40,7 +40,7 @@ export const day1Activities: Activity[] = [
   },
   {
     time: "11:00 – 12:00",
-    activity: "Charla - Magistral 2",
+    activity: "Conferencia magistral 2",
     theme:
       "Transferencia Tecnológica: Innovar desde la generación de conocimiento.",
     speaker: "PhD. Héctor Hidalgo (Universidad Andrés Bello)",
@@ -67,7 +67,7 @@ export const day1Activities: Activity[] = [
   {
     time: "16:00 – 16:30",
     activity: "Reconocimientos proyectos",
-    theme: "-",
+    theme: "Auditorio 1",
     speaker: "-",
   },
 ];
@@ -76,24 +76,24 @@ export const day2Activities: Activity[] = [
   {
     time: "08:30 – 09:00",
     activity: "Registro e ingreso",
-    theme: "-",
+    theme: "Auditorio 1",
     speaker: "-",
   },
   {
     time: "09:00 – 10:00",
-    activity: "Conferencia magistral 1",
+    activity: "Conferencia magistral 3",
     theme: "Impacto social de la educación superior desde la vinculación con la sociedad",
     speaker: "Presidenta CACES",
   },
   {
     time: "10:00 – 11:00",
-    activity: "Conferencia magistral 2",
+    activity: "Conferencia magistral 4",
     theme: "Gestión del conocimiento para la generación de innovaciones sociales",
     speaker: "Expositor internacional 2 Parque científico de Innovación Social - Colombia",
   },
   {
     time: "11:00 – 12:30",
-    activity: "Foro con 4 panelistas (RECTORES)",
+    activity: "Foro Académico de Vinculación con la sociedad",
     theme:
       "Innovación y transformación del territorio desde la articulación de las funciones sustantivas",
     speaker:
@@ -102,7 +102,7 @@ export const day2Activities: Activity[] = [
   {
     time: "12:30 – 14:00",
     activity: "Almuerzo",
-    theme: "-",
+    theme: "Libre",
     speaker: "DIRECTORIO REUVIC / rectores y conferencistas",
   },
   {
@@ -113,15 +113,9 @@ export const day2Activities: Activity[] = [
     speaker: "Pitch – 8 Ponentes",
   },
   {
-    time: "15:45 – 16:00",
+    time: "15:45 – 16:20",
     activity: "Cierre",
     theme: "Palabras de Cierre EPN – Conclusiones generales",
     speaker: "Vicerrectorado de Investigación, Innovación y Vinculación / DIV",
-  },
-  {
-    time: "16:00 – 16:20",
-    activity: "Cierre",
-    theme: "Evento artístico",
-    speaker: "-",
   },
 ];

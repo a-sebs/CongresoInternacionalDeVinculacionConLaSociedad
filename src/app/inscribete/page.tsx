@@ -138,7 +138,7 @@ const ParticipaPage = () => {
               <button
                 onClick={() => {
                   setShowDialog(false);
-                  window.open("https://forms.cloud.microsoft/r/KiKD7HVDhr?origin=lprLink", "_blank", "noopener,noreferrer");
+                  window.open("https://inscripcioneventos.utpl.edu.ec/enrollment/eyJwZXJpb2RvIjogIjIwMjYwMiIsInByb2dyYW1hIjogIkNPU0VfUDAiLCJjYXJyZXJhIjogIkNWQzEiLCJtYXRlcmlhIjogIkNPU0UiLCJjdXJzbyI6ICIxMTU5Iiwibm9tYnJlQ3Vyc28iOiAiSVYgQ09OR1JFU08gVklOIENPTkVDVCAyMDI2Iiwic29icmVwYXNhckN1cG9zIjogIk4ifQ", "_blank", "noopener,noreferrer");
                 }}
                 className="px-6 py-3 rounded-md bg-primary text-white hover:bg-primary/90 hover:shadow-lg font-bold transition-all w-full sm:w-auto"
               >

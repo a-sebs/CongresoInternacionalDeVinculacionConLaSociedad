@@ -13,7 +13,7 @@ export default function AgendaTable() {
       </h2>
 
       {/* Day Tabs */}
-      <div className="mb-12 flex justify-center gap-4 flex-wrap">
+      <div className="mb-6 flex justify-center gap-4 flex-wrap">
         <button
           onClick={() => setActiveDay(1)}
           className={`rounded-lg px-6 py-3 font-semibold transition-all ${
@@ -36,18 +36,26 @@ export default function AgendaTable() {
         </button>
       </div>
 
+      <div className="mb-8 text-center">
+        <h3 className="text-xl font-bold text-primary md:text-2xl">
+          {activeDay === 1 
+            ? "Día 1: Transferencia Tecnológica y Desarrollo" 
+            : "Día 2: Innovación Social e Impacto en la sociedad"}
+        </h3>
+      </div>
+
       {/* Table */}
-      <div className="overflow-x-auto rounded-lg border border-gray-200 bg-white">
-        <table className="w-full">
+      <div className="mx-auto max-w-5xl overflow-x-auto rounded-lg border border-gray-200 bg-white">
+        <table className="w-full text-center">
           <thead>
             <tr className="border-b border-gray-200 bg-gray-50">
-              <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
+              <th className="px-4 py-4 font-semibold text-gray-900 md:px-6 align-middle">
                 Hora
               </th>
-              <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
+              <th className="px-4 py-4 font-semibold text-gray-900 md:px-6 align-middle">
                 Actividad
               </th>
-              <th className="px-4 py-4 text-left font-semibold text-gray-900 md:px-6">
+              <th className="px-4 py-4 font-semibold text-gray-900 md:px-6 align-middle">
                 Tema
               </th>
             </tr>
@@ -61,13 +69,13 @@ export default function AgendaTable() {
                     index % 2 === 0 ? "bg-white" : "bg-gray-50"
                   }`}
                 >
-                  <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 md:px-6">
+                  <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 md:px-6 align-middle">
                     {activity.time}
                   </td>
-                  <td className="px-4 py-4 text-gray-700 md:px-6">
+                  <td className="px-4 py-4 text-gray-700 md:px-6 align-middle">
                     {activity.activity}
                   </td>
-                  <td className="px-4 py-4 text-sm text-gray-600 md:px-6">
+                  <td className="px-4 py-4 text-sm text-gray-600 md:px-6 align-middle">
                     {activity.theme}
                   </td>
                 </tr>
