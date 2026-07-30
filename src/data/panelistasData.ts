@@ -11,8 +11,8 @@ export interface Panelista {
 export const panelistas: Panelista[] = [
   {
     id: 1,
-    nombre: "Juan Fernando Pacheco Duarte",
-    perfil: "Rector Parque Científico de Innovación Social",
+    nombre: "Juan Fernando Pacheco",
+    perfil: "Rector en PCIS",
     pais: "Colombia",
     tema: "Gestión del conocimiento para la generación de innovaciones sociales",
     imagen: "/images/blog/Juan Fernando Pacheco Duarte.png",
@@ -20,15 +20,15 @@ export const panelistas: Panelista[] = [
   {
     id: 2,
     nombre: "Hector Hidalgo",
-    perfil: "CEO de innovación académica",
+    perfil: "CEO de Innovación Académica",
     pais: "Chile",
-    tema: "Transferencia Tecnológica: Innovar desde la generación de conocimiento.",
+    tema: "Transferencia Tecnológica: Innovar desde la generación de conocimiento",
     imagen: "/images/blog/Hector Hidalgo.png",
   },
   {
     id: 3,
     nombre: "Jairo Castañeda",
-    perfil: "Ministerio de defensa de Colombia",
+    perfil: "Ministerio de Defensa de Colombia",
     pais: "Colombia",
     tema: "Transferencia de conocimiento e innovación desde la educación superior",
     imagen: "/images/blog/Jairo Castañeda-modified.png",

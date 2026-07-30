@@ -33,12 +33,6 @@ export const day1Activities: Activity[] = [
     speaker: "-",
   },
   {
-    time: "10:30 – 13:30",
-    activity: "Feria de proyectos",
-    theme: "Exposición de proyectos plazoleta EARME (10H00 Evento Inaugural)",
-    speaker: "-",
-  },
-  {
     time: "11:00 – 12:00",
     activity: "Conferencia magistral 2",
     theme:
@@ -61,7 +55,7 @@ export const day1Activities: Activity[] = [
     time: "14:30 – 16:00",
     activity: "Presentación de pitch de investigadores",
     theme:
-      "Resultados de impacto de proyectos de transferencia de conocimiento y vinculación",
+      "Resultados de impacto de proyectos de vinculación y transferencia tecnológica",
     speaker: "Pitch – 6 Ponentes",
   },
   {
@@ -109,7 +103,7 @@ export const day2Activities: Activity[] = [
     time: "14:00 – 15:45",
     activity: "Presentación de ponencias",
     theme:
-      "Resultados de impacto de proyectos de transferencia de conocimiento y vinculación",
+      "Resultados de impacto de proyectos de vinculación y transferencia tecnológica",
     speaker: "Pitch – 8 Ponentes",
   },
   {
@@ -119,3 +113,10 @@ export const day2Activities: Activity[] = [
     speaker: "Vicerrectorado de Investigación, Innovación y Vinculación / DIV",
   },
 ];
+
+export const day1ParallelActivity: Activity = {
+  time: "10:30 – 13:30",
+  activity: "Feria de proyectos",
+  theme: "Exposición de proyectos plazoleta EARME",
+  speaker: "-",
+};
